@@ -6,7 +6,6 @@ import Layout from "./pages/Layout"; // Add this import statement
 import NoPage from "./pages/NoPage";
 import Projects from "./pages/Projects.js";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
 import Homepage from "./pages/Homepage";
 import "./index.css";
 
@@ -16,7 +15,6 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Homepage />} />
-          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
         </Route>
