@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, Form } from "react-router-dom";
 import Nav from "../comps/Nav";
 import Footer from "../comps/Footer";
 import { Container } from "react-bootstrap";

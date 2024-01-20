@@ -1,0 +1,14 @@
+/* Light theme colors */
+:root {
+    --primary-color: #ff9700;
+    --background-color: #a3a3a3;
+    --text-color: #2c2c2c;
+  }
+  
+  /* Dark theme colors */
+  [data-theme='dark'] {
+    --primary-color: #ff9700;
+    --background-color: #141414;
+    --text-color: #a2a2a2;
+  }
+  

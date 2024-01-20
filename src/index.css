@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ 
+
+@import './theme.css';
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

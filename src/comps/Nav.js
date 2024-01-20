@@ -13,9 +13,9 @@ function NavigationBar() {
     // Apply the initial theme based on the browser's setting
     const updateBodyClasses = () => {
       if (darkMode) {
-        document.body.classList.add("bg-dark", "text-white");
+        document.body.setAttribute("data-theme", "dark");
       } else {
-        document.body.classList.remove("bg-dark", "text-white");
+        document.body.removeAttribute("data-theme");
       }
     };
 
