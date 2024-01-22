@@ -3,6 +3,12 @@
     --primary-color: #ff9700;
     --background-color: #a3a3a3;
     --text-color: #2c2c2c;
+    --footer-background-color: #f8f9fa;
+    --footer-text-color: #2c2c2c;
+
+    /* SVG BANNER */
+    --banner-text-color: #2c2c2c;
+    --banner-BG2: #c4c4c4;
   }
   
   /* Dark theme colors */
@@ -10,5 +16,11 @@
     --primary-color: #ff9700;
     --background-color: #141414;
     --text-color: #a2a2a2;
+    --footer-background-color: #343a40;
+    --footer-text-color: #a2a2a2;
+
+    /* SVG BANNER */
+    --banner-text-color: #f2f2f2;
+    --banner-BG2: #292929;
   }
   
