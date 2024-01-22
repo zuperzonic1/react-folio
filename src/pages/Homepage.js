@@ -1,26 +1,30 @@
-// import HeroImg from "../images/HeroImg.js";
+import React from "react";
 import { ReactComponent as HeroSvg } from "../images/HeroBanner.svg";
 import { Container, Row, Col } from "react-bootstrap";
 import Typed from "react-typed";
-import { render } from "react-dom";
+import AboutSection from "../comps/AboutSection";
+import SkillsSection from "../comps/SkillsSection";
 
 const Homepage = () => {
-  let x = 10;
-
   return (
     <Container>
       <Row>
         <Col md={{ span: 8, offset: 2 }}>
           <HeroSvg className="w-100" />
-          <h1 className="text-center">
+          <h2 className="text-end">
+            {" "}
             A{" "}
             <Typed
-              strings={["Web Developer", "UI/ UX Designer"]}
-              typeSpeed={20}
+              strings={["WEB DEVELOPER", "UI/ UX DESIGNER"]}
+              typeSpeed={150}
+              backSpeed={100}
+              loop
             />
-          </h1>
+          </h2>
         </Col>
       </Row>
+      <AboutSection />
+      <SkillsSection />
     </Container>
   );
 };
