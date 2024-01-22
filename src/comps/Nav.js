@@ -55,12 +55,11 @@ function NavigationBar() {
             <LinkContainer to="/">
               <Nav.Link href="#about">About</Nav.Link>
             </LinkContainer>
-
-            <LinkContainer to="/contact">
-              <Nav.Link>Contact</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/projects">
               <Nav.Link className="me-3">Projects</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/contact">
+              <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
             <Nav.Item>
               <Form.Check

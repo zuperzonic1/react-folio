@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import AboutImg from "../images/aboutImg.png";
-// import AboutMeImage from "../images/about-me-image.png"; // Replace with path to your image
+import AboutImg from "../images/aboutImg.png"; // Ensure the path to your image is correct
 
 const AboutSection = () => {
   return (
@@ -19,7 +18,9 @@ const AboutSection = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </Col>
-        <Col md={6} className="text-center">
+        <Col md={6} className="text-md-end text-center">
+          {" "}
+          {/* Right align on md and larger screens, center on smaller */}
           <img
             src={AboutImg}
             alt="About Me"

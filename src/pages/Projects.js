@@ -1,8 +1,11 @@
+import ProjectsSection from "../comps/projectSection";
+import { Container } from "react-bootstrap";
+
 const Projects = () => {
   return (
-    <>
-      <h1>Projects</h1>
-    </>
+    <Container>
+      <ProjectsSection />
+    </Container>
   );
 };
 
