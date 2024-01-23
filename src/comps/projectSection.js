@@ -19,6 +19,13 @@ const ProjectsSection = () => {
       demoUrl: "https://staging.mfelobes.ca/mad_movies/dynamic_site",
       technologies: [{ name: "React", icon: ReactIcon }],
     },
+    {
+      title: "J3os - Landing Page",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      demoUrl: "https://staging.mfelobes.ca/mad_movies/dynamic_site",
+      technologies: [{ name: "React", icon: ReactIcon }],
+    },
   ];
 
   return (
