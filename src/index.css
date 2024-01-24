@@ -47,3 +47,7 @@ fill: var(--banner-BG2);
 .footer ul li {
   padding: 5px 0;
 }
+
+.text-color {
+  color: var(--text-color);
+}
