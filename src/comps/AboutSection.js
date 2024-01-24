@@ -9,17 +9,13 @@ const AboutSection = () => {
         <Col md={6} className="text-white">
           <h1 className="mb-3 text-color">ABOUT ME</h1>
           <p className="text-color">
-            As a dynamic Web Developer based in Toronto, Michael Felobes
-            combines technical prowess with creative flair, bringing life to web
-            applications with an eye for detail and functionality. Educated at
-            Durham College and Fraser International College, Michael's expertise
-            spans across React, Node.js, database management, and Adobe Creative
-            Suite, evidenced in diverse projects from the interactive
-            Musical-Playground to the comprehensive TWDB and the multifaceted
-            Streamer Marketplace. Known for his problem-solving skills and
-            commitment to modern web standards, Michael is an asset to any
-            project, ready to innovate and excel in the ever-evolving digital
-            landscape.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </Col>
         <Col md={6} className="text-md-end text-center">

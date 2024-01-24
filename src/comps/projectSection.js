@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ReactIcon from "../images/skills/react-logo.png";
-// ... import other technology icons
 
 const ProjectsSection = () => {
   const projects = [
@@ -54,7 +53,6 @@ const ProjectsSection = () => {
                 />
               ))}
             </div>
-            {/* Here is the iframe for the project demo */}
             <div className="iframe-container" style={{ marginTop: "20px" }}>
               <iframe
                 src={project.demoUrl}
