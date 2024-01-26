@@ -9,13 +9,10 @@ const AboutSection = () => {
         <Col md={6} className="text-white">
           <h1 className="mb-3 text-color">ABOUT ME</h1>
           <p className="text-color">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Hello! I am a full-stack web developer with a passion for creating
+            beutiful and functional websites. I have experience with HTML, CSS,
+            JavaScript, React, Node.js, Express, MongoDB, and more. I am
+            currently looking for a full-time position as a web developer.
           </p>
         </Col>
         <Col md={6} className="text-md-end text-center">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import ReactIcon from "../images/skills/react-logo.png";
+import ReactIcon from "../images/skills/react-icon@2x.png";
+import NodeIcon from "../images/skills/node-icon@2x.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -23,7 +24,10 @@ const ProjectsSection = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       demoUrl: "https://staging.mfelobes.ca/mad_movies/dynamic_site",
-      technologies: [{ name: "React", icon: ReactIcon }],
+      technologies: [
+        { name: "React", icon: ReactIcon },
+        { name: "Node.js", icon: NodeIcon },
+      ],
     },
   ];
 
