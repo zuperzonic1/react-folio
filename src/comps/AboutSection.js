@@ -21,7 +21,7 @@ const AboutSection = () => {
           <img
             src={AboutImg}
             alt="About Me"
-            style={{ maxWidth: "70%" }}
+            style={{ maxWidth: "50%" }}
             className="img-fluid"
           />
         </Col>

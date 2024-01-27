@@ -9,10 +9,10 @@ const Homepage = () => {
   return (
     <Container>
       <Row>
-        <Col md={{ span: 8, offset: 2 }}>
+        {/* Set the SVG to take full width on xs to sm, 8 columns on md, and 6 columns on lg screens */}
+        <Col xs={12} md={8} lg={6} className="mx-auto">
           <HeroSvg className="w-100" />
-          <h2 className="text-end">
-            {" "}
+          <h2 className="text-end me-auto">
             A{" "}
             <Typed
               strings={["WEB DEVELOPER", "UI/ UX DESIGNER"]}
@@ -23,8 +23,12 @@ const Homepage = () => {
           </h2>
         </Col>
       </Row>
-      <AboutSection />
-      <SkillsSection />
+      <Row>
+        <AboutSection />
+      </Row>
+      <Row>
+        <SkillsSection />
+      </Row>
     </Container>
   );
 };
