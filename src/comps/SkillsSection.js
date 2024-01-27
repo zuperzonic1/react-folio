@@ -14,7 +14,34 @@ import mysqlIcon from "../images/skills/mysql-icon@2x.png";
 import firebaseIcon from "../images/skills/firebase-icon@2x.png";
 
 const SkillsSection = () => {
-  const iconClass = "img-fluid mt-5";
+  const iconClass = "img-fluid h-50 mt-5";
+
+  const webDevelopmentIcons = [
+    { src: reactIcon, alt: "React" },
+    { src: bootstrapIcon, alt: "Bootstrap" },
+    { src: cssIcon, alt: "CSS" },
+    { src: htmlIcon, alt: "HTML" },
+    { src: jsIcon, alt: "JavaScript" },
+    { src: nodeIcon, alt: "Node.js" },
+    { src: wordpressIcon, alt: "WordPress" },
+    { src: phpIcon, alt: "PHP" },
+    { src: mysqlIcon, alt: "MySQL" },
+    { src: firebaseIcon, alt: "Firebase" },
+  ];
+
+  const designIcons = [
+    { src: psIcon, alt: "Photoshop" },
+    { src: xdIcon, alt: "Adobe XD" },
+
+    // ... add other design icons here
+  ];
+
+  const renderIcons = (iconsArray) =>
+    iconsArray.map((icon, index) => (
+      <Col key={index} xs={6} md={2} className="d-flex justify-content-center">
+        <img src={icon.src} alt={icon.alt} className={iconClass} />
+      </Col>
+    ));
 
   return (
     <Container className="my-5">
@@ -23,23 +50,15 @@ const SkillsSection = () => {
         <Col xs={12}>
           <h5 className="text-color">WEB DEVELOPMENT</h5>
           <Row className="justify-content-center justify-content-md-start">
-            {/* Icons with mt-3 class for top margin */}
-            <Col xs={6} md={2} className="d-flex justify-content-center">
-              <img src={reactIcon} alt="React" className={iconClass} />
-            </Col>
-            {/* ... repeat for other icons with mt-3 class */}
+            {renderIcons(webDevelopmentIcons)}
           </Row>
         </Col>
       </Row>
       <Row>
         <Col xs={12}>
-          <h5 className=" text-color mt-3">DESIGN</h5>
+          <h5 className="text-color mt-3">DESIGN</h5>
           <Row className="justify-content-center justify-content-md-start">
-            {/* Icons with mt-3 class for top margin */}
-            <Col xs={6} md={2} className="d-flex justify-content-center">
-              <img src={psIcon} alt="Photoshop" className={iconClass} />
-            </Col>
-            {/* ... repeat for other icons with mt-3 class */}
+            {renderIcons(designIcons)}
           </Row>
         </Col>
       </Row>
