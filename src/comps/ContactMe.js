@@ -71,8 +71,8 @@ const ContactMe = () => {
     <Container className="my-5">
       <Row className="justify-content-center">
         <Col md={8}>
-          <h1 className="text-warning text-center mb-4">CONTACT ME</h1>
-          <p className="text-light text-center">
+          <h1 className="text-color text-center mb-4">CONTACT ME</h1>
+          <p className="text-color text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -110,15 +110,7 @@ const ContactMe = () => {
                 />
               </Col>
             </Row>
-            <Form.Group className="mb-3" controlId="formBasicAddress">
-              <Form.Control
-                type="text"
-                name="address"
-                placeholder="Enter your address"
-                value={formData.address}
-                onChange={handleChange}
-              />
-            </Form.Group>
+
             <Form.Group className="mb-3" controlId="formBasicMessage">
               <Form.Control
                 as="textarea"

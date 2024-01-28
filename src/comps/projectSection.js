@@ -33,12 +33,13 @@ const ProjectsSection = () => {
 
   return (
     <Container className="my-5">
-      <h1 className="text-center text-white mb-4">PROJECTS</h1>
+      <h1 className="text-center text-color mb-4">PROJECTS</h1>
       {projects.map((project, index) => (
-        <Row key={index} className="mb-5">
+        // Add a border class to each project row
+        <Row key={index} className="mb-5  border-project p-3">
           <Col lg={12}>
-            <h3 className="text-warning">{project.title}</h3>
-            <p className="text-light">{project.description}</p>
+            <h3 className="text-color">{project.title}</h3>
+            <p className="text-color">{project.description}</p>
             <Button
               variant="warning"
               href={project.demoUrl}

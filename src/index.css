@@ -50,4 +50,28 @@ fill: var(--banner-BG2);
 
 .text-color {
   color: var(--text-color);
+};
+
+
+.containerHeightIncrease {
+  height: 100%; /* or a specific height */
+  overflow-x: auto;
+  
+}
+
+/* Ensure the canvas fills its container */
+canvas {
+  width: 100%;
+  height: 200%;
+  display: block; /* removes any extra space at the bottom of the canvas */
+}
+.canvas-container {
+  height: 75vh; /* This sets the height to 75% of the viewport height */
+}
+
+.border-project{
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
 }
