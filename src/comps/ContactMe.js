@@ -14,7 +14,7 @@ const ContactMe = () => {
 
   // Regex patterns for validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const phoneRegex = /^\+?\d{10,15}$/; // Adjust regex according to your needs
+  const phoneRegex = /^\+?[1-9]\d{1,14}$/;
 
   // Handle form field changes
   const handleChange = (e) => {

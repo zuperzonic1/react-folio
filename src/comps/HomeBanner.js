@@ -10,8 +10,7 @@ const HomeBanner = () => {
     <Col xs={12} md={8} lg={6} className="mx-auto position-relative">
       <HeroSvg className="w-100" />
       <div className="position-absolute top-50 start-50 translate-middle earth3d "></div>
-
-      <TextAnimation />
+      <TextAnimation />{" "}
     </Col>
   );
 };

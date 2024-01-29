@@ -1,8 +1,47 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Icons from "../comps/icons";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
 
 const SkillsSection = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const webDevRef = useRef(null);
+  const designRef = useRef(null);
+
+  useEffect(() => {
+    if (webDevRef.current) {
+      gsap.from(webDevRef.current.children, {
+        scrollTrigger: {
+          trigger: webDevRef.current,
+          start: "top 80%", // when the top of the trigger hits the 80% viewport height
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "power2.out",
+        duration: 1,
+      });
+    }
+
+    if (designRef.current) {
+      gsap.from(designRef.current.children, {
+        scrollTrigger: {
+          trigger: designRef.current,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        ease: "power2.out",
+        duration: 1,
+      });
+    }
+  }, []);
+
   const iconClass = "img-fluid h-50 mt-5";
 
   const webDevelopmentIcons = [
@@ -39,7 +78,10 @@ const SkillsSection = () => {
       <Row className="mb-3">
         <Col xs={12}>
           <h5 className="text-color">WEB DEVELOPMENT</h5>
-          <Row className="justify-content-center justify-content-md-start">
+          <Row
+            ref={webDevRef}
+            className="justify-content-center justify-content-md-start"
+          >
             {renderIcons(webDevelopmentIcons)}
           </Row>
         </Col>
@@ -47,7 +89,10 @@ const SkillsSection = () => {
       <Row>
         <Col xs={12}>
           <h5 className="text-color mt-3">DESIGN</h5>
-          <Row className="justify-content-center justify-content-md-start">
+          <Row
+            ref={designRef}
+            className="justify-content-center justify-content-md-start"
+          >
             {renderIcons(designIcons)}
           </Row>
         </Col>
