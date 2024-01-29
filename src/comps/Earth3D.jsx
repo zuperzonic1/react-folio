@@ -46,7 +46,7 @@ const Earth = () => {
               map={colorMap}
               normalScale={[0.1, 0.1]}
             />
-            <OrbitControls enableZoom={true} enablePan={true} />
+            <OrbitControls enableZoom={false} enablePan={true} />
           </mesh>
           <ambientLight intensity={1} />
           <directionalLight position={[5, 3, 5]} intensity={1.5} />
