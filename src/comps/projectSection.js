@@ -1,33 +1,24 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import ReactIcon from "../images/skills/react-icon@2x.png";
-import NodeIcon from "../images/skills/node-icon@2x.png";
+import Icons from "../comps/icons";
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "StatkiK - Landing Page",
+      title: "StatkAi - LANDING PAGE",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "statkAi is a Landing page for a company that offers AI solutions for businesses. The website is built using React and Bootstrap. The website is responsive and mobile friendly.",
       demoUrl: "https://statik.mfelobes.ca/",
-      technologies: [{ name: "React", icon: ReactIcon }],
+      technologies: [{ name: "React", icon: Icons.react }],
+      githubUrl: "https://github.com/zuperzonic1/my-site", // Update this URL accordingly
     },
     {
-      title: "StatkiK - Landing Page",
+      title: "TWDB - THE WITCHER DATABASE",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "TWDB is a database for the Witcher universe. The website is built using Sammy.js, Foundation, PHP, MySQL, and Jquery. the website pulls data from a MySQL database and displays it on the website. The website is responsive and mobile friendly.",
       demoUrl: "https://staging.mfelobes.ca/mad_movies/dynamic_site",
-      technologies: [{ name: "React", icon: ReactIcon }],
-    },
-    {
-      title: "J3os - Landing Page",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      demoUrl: "https://staging.mfelobes.ca/mad_movies/dynamic_site",
-      technologies: [
-        { name: "React", icon: ReactIcon },
-        { name: "Node.js", icon: NodeIcon },
-      ],
+      technologies: [{ name: "React", icon: Icons.react }],
+      githubUrl: "https://github.com/yourusername/statkik-landing-page", // Update this URL accordingly
     },
   ];
 
@@ -35,19 +26,35 @@ const ProjectsSection = () => {
     <Container className="my-5">
       <h1 className="text-center text-color mb-4">PROJECTS</h1>
       {projects.map((project, index) => (
-        // Add a border class to each project row
-        <Row key={index} className="mb-5  border-project p-3">
+        <Row key={index} className="mb-5 border-project p-3">
           <Col lg={12}>
-            <h3 className="text-color">{project.title}</h3>
+            <div className="d-flex justify-content-between align-items-center mb-2">
+              <h3 className="text-color">{project.title}</h3>
+              <div>
+                <Button
+                  variant="warning"
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ms-2"
+                >
+                  DEMO
+                </Button>
+                <a
+                  href={project.githubUrl} // Use the githubUrl from the project object
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ms-2"
+                >
+                  <img
+                    src={Icons.git}
+                    alt="GitHub"
+                    style={{ width: "30px", height: "30px" }}
+                  />
+                </a>
+              </div>
+            </div>
             <p className="text-color">{project.description}</p>
-            <Button
-              variant="warning"
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DEMO
-            </Button>
             <div className="tech-icons mt-3">
               {project.technologies.map((tech, index) => (
                 <img

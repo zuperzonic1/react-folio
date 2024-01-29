@@ -44,6 +44,7 @@ function NavigationBar() {
       expand="lg"
       bg={darkMode ? "dark" : "light"}
       variant={darkMode ? "dark" : "light"}
+      className="py-3" // Add more padding to the top and bottom of the Navbar
     >
       <Container>
         <LinkContainer to="/">
@@ -56,21 +57,21 @@ function NavigationBar() {
               <Nav.Link href="#about">About</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/projects">
-              <Nav.Link className="me-3">Projects</Nav.Link>
+              <Nav.Link className="mx-4">Projects</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/contact">
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
-            <Nav.Item>
+            <Form className="d-flex align-items-center ms-3">
               <Form.Check
                 type="switch"
                 id="dark-mode-switch"
                 label="Dark Mode"
                 checked={darkMode}
                 onChange={handleDarkModeToggle}
-                className="my-2 my-lg-0"
+                className="me-2"
               />
-            </Nav.Item>
+            </Form>
           </Nav>
         </Navbar.Collapse>
       </Container>

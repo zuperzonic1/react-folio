@@ -1,39 +1,29 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import reactIcon from "../images/skills/react-icon@2x.png";
-import bootstrapIcon from "../images/skills/bootstrap-icon@2x.png";
-import cssIcon from "../images/skills/css-icon@2x.png";
-import htmlIcon from "../images/skills/html-icon@2x.png";
-import jsIcon from "../images/skills/js-icon@2x.png";
-import nodeIcon from "../images/skills/node-icon@2x.png";
-import psIcon from "../images/skills/ps-icon@2x.png";
-import xdIcon from "../images/skills/xd-icon@2x.png";
-import wordpressIcon from "../images/skills/wordpress-icon@2x.png";
-import phpIcon from "../images/skills/php-icon@2x.png";
-import mysqlIcon from "../images/skills/mysql-icon@2x.png";
-import firebaseIcon from "../images/skills/firebase-icon@2x.png";
+import Icons from "../comps/icons";
 
 const SkillsSection = () => {
   const iconClass = "img-fluid h-50 mt-5";
 
   const webDevelopmentIcons = [
-    { src: reactIcon, alt: "React" },
-    { src: bootstrapIcon, alt: "Bootstrap" },
-    { src: cssIcon, alt: "CSS" },
-    { src: htmlIcon, alt: "HTML" },
-    { src: jsIcon, alt: "JavaScript" },
-    { src: nodeIcon, alt: "Node.js" },
-    { src: wordpressIcon, alt: "WordPress" },
-    { src: phpIcon, alt: "PHP" },
-    { src: mysqlIcon, alt: "MySQL" },
-    { src: firebaseIcon, alt: "Firebase" },
+    { src: Icons.react, alt: "React" },
+    { src: Icons.bootstrap, alt: "Bootstrap" },
+    { src: Icons.css, alt: "CSS" },
+    { src: Icons.html, alt: "HTML" },
+    { src: Icons.javascript, alt: "JavaScript" },
+    { src: Icons.nodejs, alt: "Node.js" },
+    { src: Icons.wordpress, alt: "WordPress" },
+    { src: Icons.php, alt: "PHP" },
+    { src: Icons.mysql, alt: "MySQL" },
+    { src: Icons.firebase, alt: "Firebase" },
+    { src: Icons.three, alt: "Three.js" },
+    { src: Icons.git, alt: "Git" },
   ];
 
   const designIcons = [
-    { src: psIcon, alt: "Photoshop" },
-    { src: xdIcon, alt: "Adobe XD" },
-
-    // ... add other design icons here
+    { src: Icons.photoshop, alt: "Photoshop" },
+    { src: Icons.xd, alt: "Adobe XD" },
+    { src: Icons.illustrator, alt: "Illustrator" },
   ];
 
   const renderIcons = (iconsArray) =>
