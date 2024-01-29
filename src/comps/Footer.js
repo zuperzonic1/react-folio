@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -7,13 +8,17 @@ function Footer() {
       <Container>
         <Row>
           <Col className="text-start">
-            {" "}
-            {/* Aligns content to the left */}
             <h5>Index</h5>
             <ul className="list-unstyled">
-              <li>About</li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </Col>
           <Col className="text-center">
@@ -21,8 +26,20 @@ function Footer() {
             {/* Centers content horizontally */}
             <h5>Socials</h5>
             <ul className="list-unstyled">
-              <li>Github</li>
-              <li>LinkedIn</li>
+              <li>
+                <a href="https://github.com/zuperzonic1" target="_blank">
+                  Github
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/micheal-felobes-076230173/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </Col>
           <Col className="text-end">

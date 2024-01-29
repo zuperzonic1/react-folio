@@ -15,7 +15,7 @@ const ProjectsSection = () => {
     {
       title: "TWDB - THE WITCHER DATABASE",
       description:
-        "TWDB is a database for the Witcher universe. The website is built using Sammy.js, Foundation, PHP, MySQL, and Jquery. the website pulls data from a MySQL database and displays it on the website. The website is responsive and mobile friendly.",
+        "TWDB is a database for the Witcher universe. The website is built using Sammy.js, Foundation, PHP, MySQL, and Jquery. the website pulls data from a MySQL database and displays it on the website. The website is Desktop use for now, but will be made responsive in the future.",
       demoUrl: "https://staging.mfelobes.ca/mad_movies/dynamic_site",
       technologies: [{ name: "React", icon: Icons.react }],
       githubUrl: "https://github.com/yourusername/statkik-landing-page", // Update this URL accordingly
