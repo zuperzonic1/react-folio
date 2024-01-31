@@ -33,10 +33,47 @@ path#bannerBG2 {
 fill: var(--banner-BG2);
 }
 
+/* nav darkmode switch. */
+/* Custom styles for the dark mode toggle switch */
+
+input#dark-mode-switch.form-check-input{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+  box-shadow: var(--primary-color);
+
+}
+input#dark-mode-switch.form-check-input:active{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+  box-shadow: none;
+  outline: none;
+
+}
+
+input#dark-mode-switch.form-check-input:checked{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
+  box-shadow: none;
+  outline: none;
+}
+
+input#dark-mode-switch.form-check-input:checked:active{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
+  box-shadow: none;
+  outline: none;
+}
+
+
 .footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
   padding: 20px 0;
+  
 }
 
 .footer ul {
@@ -54,7 +91,7 @@ fill: var(--banner-BG2);
 
 
 .containerHeightIncrease {
-  height: 100%; /* or a specific height */
+  height: 100%; 
   overflow-x: auto;
   
 }
@@ -63,10 +100,10 @@ fill: var(--banner-BG2);
 canvas {
   width: 100%;
   height: 200%;
-  display: block; /* removes any extra space at the bottom of the canvas */
+  display: block; 
 }
 .canvas-container {
-  height: 75vh; /* This sets the height to 75% of the viewport height */
+  height: 75vh;
 }
 
 .border-project{
@@ -75,6 +112,44 @@ canvas {
   padding: 10px;
   margin: 10px;
 }
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--background-color);
+  scale: 1.05;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--background-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  scale: 1.05;
+  border-color: var(--primary-color);
+}
+
+.footer-link {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
 
 /* mobile media query  */
 
@@ -85,4 +160,5 @@ canvas {
     transform-origin: center center c\
 ;
   }
-}
+};
+

@@ -11,31 +11,41 @@ function Footer() {
             <h5>Index</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" className="footer-link">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects" className="footer-link">
+                  Projects
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" className="footer-link">
+                  Contact
+                </Link>
               </li>
             </ul>
           </Col>
           <Col className="text-center">
-            {" "}
-            {/* Centers content horizontally */}
             <h5>Socials</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="https://github.com/zuperzonic1" target="_blank">
+                <a
+                  href="https://github.com/zuperzonic1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
                   Github
                 </a>
               </li>
-
               <li>
                 <a
                   href="https://www.linkedin.com/in/micheal-felobes-076230173/"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
                 >
                   LinkedIn
                 </a>
@@ -43,13 +53,28 @@ function Footer() {
             </ul>
           </Col>
           <Col className="text-end">
-            {" "}
-            {/* Aligns content to the right */}
             <h5>Contact Info</h5>
             <ul className="list-unstyled">
-              <li>Fill Form</li>
-              <li>LinkedIn</li>
-              <li>Me@Mfelobes.ca</li>
+              <li>
+                <Link to="/contact" className="footer-link">
+                  Form
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/micheal-felobes-076230173/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="mailto:Me@Mfelobes.ca" className="footer-link">
+                  Email
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>

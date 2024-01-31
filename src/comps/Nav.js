@@ -48,7 +48,7 @@ function NavigationBar() {
     >
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand>MF</Navbar.Brand>
+          <Navbar.Brand>HOME</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

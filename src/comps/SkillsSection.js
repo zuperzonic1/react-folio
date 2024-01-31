@@ -4,6 +4,7 @@ import Icons from "../comps/icons";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const SkillsSection = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +43,8 @@ const SkillsSection = () => {
     }
   }, []);
 
-  const iconClass = "img-fluid h-50 mt-5";
+  // add margin top to the icons
+  const iconClass = "img-fluid mt-3";
 
   const webDevelopmentIcons = [
     { src: Icons.react, alt: "React" },
@@ -67,16 +69,34 @@ const SkillsSection = () => {
 
   const renderIcons = (iconsArray) =>
     iconsArray.map((icon, index) => (
-      <Col key={index} xs={6} md={2} className="d-flex justify-content-center">
-        <img src={icon.src} alt={icon.alt} className={iconClass} />
+      // Use smaller column sizes and add custom class for additional control
+      <Col
+        key={index}
+        xs={4}
+        sm={2}
+        lg={1}
+        className="d-flex justify-content-center align-items-center px-1"
+      >
+        <OverlayTrigger
+          key={index}
+          placement="top"
+          overlay={<Tooltip id={`tooltip-${index}`}>{icon.alt}</Tooltip>}
+        >
+          <img
+            src={icon.src}
+            alt={icon.alt}
+            className={iconClass}
+            style={{ maxWidth: "60px", maxHeight: "60px" }}
+          />
+        </OverlayTrigger>
       </Col>
     ));
 
   return (
-    <Container className="my-5">
-      <h1 className="text-color mb-4">SKILLS</h1>
-      <Row className="mb-3">
-        <Col xs={12}>
+    <Container fluid className="my-5 px-0">
+      <h1 className="text-color mb-4 text-center text-md-start">SKILLS</h1>
+      <Row className="mb-3 justify-content-center justify-content-md-start">
+        <Col xs={12} className="text-center text-md-start">
           <h5 className="text-color">WEB DEVELOPMENT</h5>
           <Row
             ref={webDevRef}
@@ -86,8 +106,8 @@ const SkillsSection = () => {
           </Row>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12}>
+      <Row className="justify-content-center justify-content-md-start">
+        <Col xs={12} className="text-center text-md-start">
           <h5 className="text-color mt-3">DESIGN</h5>
           <Row
             ref={designRef}

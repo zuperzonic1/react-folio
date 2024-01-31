@@ -14,8 +14,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Homepage />} />{" "}
-          {/* Use index for the default route */}
+          <Route index element={<Homepage />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
         </Route>
