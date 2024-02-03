@@ -71,7 +71,7 @@ const ContactMe = () => {
     <Container className="my-5">
       <Row className="justify-content-center">
         <Col md={8}>
-          <h1 className="text-center subtitle-text mb-4">CONTACT ME</h1>
+          <h1 className="text-center mb-4 subtitle-text">CONTACT ME</h1>
           <p className="text-right mb-4">
             Interested in collaborating or have a question? I'd love to hear
             from you. Send me a message or connect with me through social media.

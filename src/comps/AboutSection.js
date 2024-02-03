@@ -25,7 +25,7 @@ const AboutSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn btn-secondary mt-3">Resume</button>
+            <button className="btn btn-secondary  mt-3">Resume</button>
           </a>
         </Col>
         <Col md={6}>
