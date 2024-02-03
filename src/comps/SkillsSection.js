@@ -94,7 +94,7 @@ const SkillsSection = () => {
 
   return (
     <Container fluid className="my-5 px-0">
-      <h1 className="text-color mb-4 text-center text-md-start">SKILLS</h1>
+      <h1 className="subtitle-text mb-4 text-center text-md-start">SKILLS</h1>
       <Row className="mb-3 justify-content-center justify-content-md-start">
         <Col xs={12} className="text-center text-md-start">
           <h5 className="text-color">WEB DEVELOPMENT</h5>

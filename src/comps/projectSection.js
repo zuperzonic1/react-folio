@@ -62,7 +62,7 @@ const ProjectsSection = () => {
 
   return (
     <Container className="my-5">
-      <h1 className="text-center text-color mb-4 ">MY PROJECTS</h1>
+      <h1 className="text-center subtitle-text mb-4 ">MY PROJECTS</h1>
       {projects.map((project, index) => (
         <Row key={index} className="mb-5 border-project p-3 project-row">
           <Col lg={12}>

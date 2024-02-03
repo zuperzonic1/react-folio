@@ -8,7 +8,7 @@ const AboutSection = () => {
     <Container className="my-5">
       <Row className="align-items-center ">
         <Col md={6} className="text-white">
-          <h1 className="mb-3 text-color">ABOUT ME</h1>
+          <h1 className="mb-3 subtitle-text">ABOUT ME</h1>
           <p className="text-color">
             Hello! I am a full-stack web developer with a passion for creating
             beutiful and functional websites. I have experience with HTML, CSS,

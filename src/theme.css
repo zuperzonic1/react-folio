@@ -4,7 +4,8 @@
     --background-color: #e3e3e3;
     --text-color: #2c2c2c;
     --footer-background-color: #f8f9fa;
-    --footer-text-color: #2c2c2c;
+    --footer-text-color: #3d3d3d;
+    --subtitle-text-color: #2c2c2c;
 
 
     /* SVG BANNER */
@@ -19,6 +20,7 @@
     --text-color: #a2a2a2;
     --footer-background-color: #212529;
     --footer-text-color: #a2a2a2;
+    --subtitle-text-color: #f2f2f2;
 
     /* SVG BANNER */
     --banner-text-color: #f2f2f2;

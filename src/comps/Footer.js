@@ -8,7 +8,7 @@ function Footer() {
       <Container>
         <Row>
           <Col className="text-start">
-            <h5>Index</h5>
+            <h5 className="subtitle-text">Index</h5>
             <ul className="list-unstyled">
               <li>
                 <Link to="/" className="footer-link">
@@ -28,7 +28,7 @@ function Footer() {
             </ul>
           </Col>
           <Col className="text-center">
-            <h5>Socials</h5>
+            <h5 className="subtitle-text">Socials</h5>
             <ul className="list-unstyled">
               <li>
                 <a
@@ -53,7 +53,7 @@ function Footer() {
             </ul>
           </Col>
           <Col className="text-end">
-            <h5>Contact Info</h5>
+            <h5 className="subtitle-text">Contact Info</h5>
             <ul className="list-unstyled">
               <li>
                 <Link to="/contact" className="footer-link">

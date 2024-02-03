@@ -149,6 +149,10 @@ canvas {
   color: inherit; 
 }
 
+.subtitle-text {
+  color: var(--subtitle-text-color);
+}
+
 
 
 /* mobile media query  */
