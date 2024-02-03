@@ -5,7 +5,7 @@ import { Canvas, useLoader } from '@react-three/fiber';
 import { useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
-import earthText from '../images/textures/earth.jpg';
+import earthText from '../assets/images/textures/earth.jpg';
 
 const Earth = () => {
     const [colorMap] = useLoader(THREE.TextureLoader, [earthText]);

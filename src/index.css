@@ -89,6 +89,11 @@ input#dark-mode-switch.form-check-input:checked:active{
   color: var(--text-color);
 };
 
+.subtitle-text {
+  color: var(--subtitle-text-color);
+}
+
+
 
 .containerHeightIncrease {
   height: 100%; 
@@ -149,9 +154,6 @@ canvas {
   color: inherit; 
 }
 
-.subtitle-text {
-  color: var(--subtitle-text-color);
-}
 
 
 

@@ -1,4 +1,4 @@
-import { ReactComponent as HeroSvg } from "../images/HeroBanner.svg";
+import { ReactComponent as HeroSvg } from "../assets/images/HeroBanner.svg";
 import { Col } from "react-bootstrap";
 import React from "react";
 import TextAnimation from "../comps/TextAnimation";
