@@ -2,8 +2,8 @@ import * as React from "react";
 
 const Logo = (props) => (
     <svg
-    width="381"
-    height="45" // Set a default height
+    width="auto"
+    height="45"
     scale={props.scale} // Pass the scale as a prop
     xmlns="http://www.w3.org/2000/svg"
     id="Layer_1"

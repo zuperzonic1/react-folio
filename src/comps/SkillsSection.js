@@ -8,38 +8,57 @@ import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const SkillsSection = () => {
   gsap.registerPlugin(ScrollTrigger);
+
+  // Refs for elements
+  const titleRef = useRef(null);
   const webDevRef = useRef(null);
   const designRef = useRef(null);
 
   useEffect(() => {
-    if (webDevRef.current) {
-      gsap.from(webDevRef.current.children, {
+    // Common animation setup
+    const animateIn = (element, opts = {}) => {
+      gsap.from(element, {
         scrollTrigger: {
-          trigger: webDevRef.current,
-          start: "top 80%", // when the top of the trigger hits the 80% viewport height
+          trigger: element,
+          start: "top 80%",
           toggleActions: "play none none none",
+          ...opts.scrollTrigger,
         },
         opacity: 0,
-        y: 50,
+        y: opts.y || 50,
+        x: opts.x || 0,
         stagger: 0.2,
         ease: "power2.out",
         duration: 1,
+        ...opts.animation,
+      });
+    };
+
+    // Animate the section title using the ref
+    if (titleRef.current) {
+      animateIn(titleRef.current, {
+        y: -50, // Adjust as desired
+        animation: {
+          opacity: 0.5, // Start with a lower opacity for a fade-in effect
+          ease: "power1.inOut", // A slightly different ease for distinction
+          duration: 1.5, // A bit longer to draw attention
+        },
       });
     }
 
+    // Animations for WEB DEVELOPMENT and DESIGN texts and icons
+    if (webDevRef.current) {
+      const webDevText = webDevRef.current.previousElementSibling;
+      animateIn(webDevText, { animation: { x: -50 } });
+
+      animateIn(webDevRef.current.children);
+    }
+
     if (designRef.current) {
-      gsap.from(designRef.current.children, {
-        scrollTrigger: {
-          trigger: designRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 50,
-        stagger: 0.2,
-        ease: "power2.out",
-        duration: 1,
-      });
+      const designText = designRef.current.previousElementSibling;
+      animateIn(designText, { animation: { x: -50 } });
+
+      animateIn(designRef.current.children);
     }
   }, []);
 
@@ -94,7 +113,12 @@ const SkillsSection = () => {
 
   return (
     <Container fluid className="my-5 px-0">
-      <h1 className="subtitle-text mb-4 text-center text-md-start">SKILLS</h1>
+      <h1
+        ref={titleRef}
+        className="subtitle-text mb-4 text-center text-md-start"
+      >
+        SKILLS
+      </h1>
       <Row className="mb-3 justify-content-center justify-content-md-start">
         <Col xs={12} className="text-center text-md-start">
           <h5 className="text-color">WEB DEVELOPMENT</h5>

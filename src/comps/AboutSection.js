@@ -7,8 +7,8 @@ const AboutSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center ">
-        <Col md={6} className="text-white">
-          <h1 className="mb-3 subtitle-text">ABOUT ME</h1>
+        <Col md={6} className="text-white mb-5">
+          <h1 className="mb-3  subtitle-text">ABOUT ME</h1>
           <p className="text-color">
             Hello! I am a full-stack web developer with a passion for creating
             beutiful and functional websites. I have experience with HTML, CSS,
@@ -16,7 +16,7 @@ const AboutSection = () => {
             looking for a full-time position as a web developer.
           </p>
           <Link to="/projects">
-            <button className="btn btn-primary mt-3 me-2">
+            <button className="btn btn-primary mt-2 me-2">
               View My Projects
             </button>
           </Link>
@@ -28,6 +28,7 @@ const AboutSection = () => {
             <button className="btn btn-secondary  mt-3">Resume</button>
           </a>
         </Col>
+
         <Col md={6}>
           <Earth3D />
         </Col>

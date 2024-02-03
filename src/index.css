@@ -191,7 +191,7 @@ canvas {
   
   .canvas-container {
     height: 50vh; /* This sets the height to 75% of the viewport height */
-    transform-origin: center center center;
+    transform-origin: center center;
     transform: scale(0.5);
   }
 }

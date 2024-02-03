@@ -42,30 +42,35 @@ function NavigationBar() {
 
   return (
     <Navbar
-      expand="lg"
+      expand="md"
       bg={darkMode ? "dark" : "light"}
       variant={darkMode ? "dark" : "light"}
-      className="py-3" // Add more padding to the top and bottom of the Navbar
+      className="py-3"
     >
-      <Container>
+      <Container className="d-flex justify-content-between align-items-center">
+        {" "}
+        {/* Flex container with space between and vertical alignment */}
         <LinkContainer to="/">
           <Navbar.Brand>
-            <Logo />
+            <Logo /> {/* Logo on the left */}
           </Navbar.Brand>
         </LinkContainer>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto align-items-center">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />{" "}
+        {/* Hamburger menu on the right */}
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto align-items-left">
+            {" "}
+            {/* Center items vertically if needed */}
             <LinkContainer to="/">
-              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link>About</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/projects">
-              <Nav.Link className="mx-4">Projects</Nav.Link>
+              <Nav.Link>Projects</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/contact">
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
-            <Form className="d-flex justify-content-end align-items-center ms-3 ">
+            <Form inline className="d-flex align-items-center">
               <label
                 htmlFor="dark-mode-switch"
                 className="me-auto"
