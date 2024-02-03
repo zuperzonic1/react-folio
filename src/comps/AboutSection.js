@@ -15,18 +15,20 @@ const AboutSection = () => {
             JavaScript, React, Node.js, Firebase, and more. I am currently
             looking for a full-time position as a web developer.
           </p>
-          <Link to="/projects">
-            <button className="btn btn-primary mt-2 me-2">
-              View My Projects
-            </button>
-          </Link>
-          <a
-            href="https://statik.mfelobes.ca/toDownload/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-secondary  mt-3">Resume</button>
-          </a>
+          <div className="d-flex align-items-center">
+            <Link to="/projects">
+              <button className="btn btn-primary mt-2 me-2">
+                View My Projects
+              </button>
+            </Link>
+            <a
+              href="https://statik.mfelobes.ca/toDownload/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-secondary mt-2">Resume</button>
+            </a>
+          </div>
         </Col>
 
         <Col md={6}>
