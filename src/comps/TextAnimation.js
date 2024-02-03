@@ -32,7 +32,7 @@ const TextAnimation = () => {
   return (
     <div>
       <h2 className="text-center">
-        A <span ref={textRef}></span>
+        <span ref={textRef}></span>
         <span ref={cursorRef} className="cursor">
           |
         </span>

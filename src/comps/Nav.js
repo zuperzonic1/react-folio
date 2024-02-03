@@ -62,14 +62,20 @@ function NavigationBar() {
             <LinkContainer to="/contact">
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
-            <Form className="d-flex align-items-center ms-3">
+            <Form className="d-flex justify-content-end align-items-center ms-3 ">
+              <label
+                htmlFor="dark-mode-switch"
+                className="me-auto"
+                style={{ cursor: "pointer" }}
+              >
+                Color Mode
+              </label>
               <Form.Check
                 type="switch"
                 id="dark-mode-switch"
-                label="Dark Mode"
                 checked={darkMode}
                 onChange={handleDarkModeToggle}
-                className="me-2"
+                className="ms-3"
               />
             </Form>
           </Nav>
