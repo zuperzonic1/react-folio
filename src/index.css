@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  /* hide scrollbar */
+bar-width: none;
+
 }
 
 code {
@@ -20,6 +23,12 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+/* hide scrollbar from all pages. */
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 #background {
 fill: var(--background-color);
