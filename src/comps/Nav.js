@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav, Form } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import Logo from "../assets/images/Logo";
 
 function NavigationBar() {
   // Set initial dark mode state based on the browser's setting
@@ -48,7 +49,9 @@ function NavigationBar() {
     >
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand>HOME</Navbar.Brand>
+          <Navbar.Brand>
+            <Logo />
+          </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

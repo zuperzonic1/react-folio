@@ -58,7 +58,6 @@ const ContactMe = () => {
           phone: "",
           message: "",
         });
-        alert("Thanks for contacting me! I will get back to you soon.");
       } else {
         alert("Something went wrong! Please try again.");
       }
@@ -78,7 +77,7 @@ const ContactMe = () => {
           </p>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email Address</Form.Label>
+              <Form.Label className="primary-text">Email Address</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -91,7 +90,7 @@ const ContactMe = () => {
             <Row className="mb-3">
               <Col>
                 <Form.Group>
-                  <Form.Label>Name</Form.Label>
+                  <Form.Label className="primary-text">Name</Form.Label>
                   <Form.Control
                     type="text"
                     name="name"
@@ -104,7 +103,7 @@ const ContactMe = () => {
               </Col>
               <Col>
                 <Form.Group>
-                  <Form.Label>Phone Number</Form.Label>
+                  <Form.Label className="primary-text">Phone Number</Form.Label>
                   <Form.Control
                     type="tel"
                     name="phone"
@@ -118,7 +117,7 @@ const ContactMe = () => {
               </Col>
             </Row>
             <Form.Group className="mb-3" controlId="formBasicMessage">
-              <Form.Label>Message</Form.Label>
+              <Form.Label className="primary-text">Message</Form.Label>
               <Form.Control
                 as="textarea"
                 name="message"
