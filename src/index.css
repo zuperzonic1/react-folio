@@ -185,6 +185,10 @@ canvas {
   color: var(--text-color) !important;
 }
 
+path.cls-1{
+  fill: var(--banner-text-color);
+}
+
 /* mobile media query  */
 
 @media only screen and (max-width: 600px) {
@@ -195,3 +199,5 @@ canvas {
     transform: scale(0.5);
   }
 }
+
+

@@ -45,7 +45,7 @@ function NavigationBar() {
       expand="md"
       bg={darkMode ? "dark" : "light"}
       variant={darkMode ? "dark" : "light"}
-      className="py-3"
+      className="py-3 sticky-top"
     >
       <Container className="d-flex justify-content-between align-items-center">
         <LinkContainer to="/">

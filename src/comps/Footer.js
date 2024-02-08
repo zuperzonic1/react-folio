@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Footer() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".footer", {
+      duration: 1,
+      y: 50,
+      opacity: 0,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top bottom", // Animation starts when the top of the footer hits the bottom of the viewport
+      },
+    });
+
+    gsap.from(".footer .subtitle-text", {
+      duration: 0.5,
+      y: 30,
+      opacity: 0,
+      stagger: 0.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top bottom",
+      },
+    });
+
+    gsap.from(".footer .list-unstyled li", {
+      duration: 0.5,
+      y: 20,
+      opacity: 0,
+      stagger: 0.1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top bottom",
+      },
+    });
+  }, []);
+
   return (
     <footer className="footer">
       <Container>
