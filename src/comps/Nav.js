@@ -48,28 +48,27 @@ function NavigationBar() {
       className="py-3"
     >
       <Container className="d-flex justify-content-between align-items-center">
-        {" "}
-        {/* Flex container with space between and vertical alignment */}
         <LinkContainer to="/">
           <Navbar.Brand>
-            <Logo /> {/* Logo on the left */}
+            <Logo />
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />{" "}
-        {/* Hamburger menu on the right */}
+        {/* Hamburger menu*/}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto align-items-left">
-            {" "}
-            {/* Center items vertically if needed */}
             <LinkContainer to="/">
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
+
             <LinkContainer to="/projects">
               <Nav.Link>Projects</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/contact">
+
+            <LinkContainer className="me-4" to="/contact">
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
+
             <Form inline className="d-flex align-items-center">
               <label
                 htmlFor="dark-mode-switch"
