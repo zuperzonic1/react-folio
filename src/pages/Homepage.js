@@ -18,19 +18,6 @@ const Homepage = () => {
       y: -50,
       ease: "power3.out",
     });
-
-    // SkillsSection Animation
-    gsap.from(".skills-section", {
-      scrollTrigger: {
-        trigger: ".skills-section",
-        start: "top 80%",
-      },
-      duration: 1.5,
-      opacity: 0,
-      y: 100,
-      stagger: 0.3,
-      ease: "power3.out",
-    });
   }, []); // Added missing closing parenthesis and semicolon
 
   return (
