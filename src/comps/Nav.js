@@ -82,7 +82,7 @@ function NavigationBar() {
                 id="dark-mode-switch"
                 checked={darkMode}
                 onChange={handleDarkModeToggle}
-                className="ms-3"
+                className="ms-1"
               />
             </Form>
           </Nav>

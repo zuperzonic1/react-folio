@@ -26,7 +26,7 @@ const ProjectsSection = () => {
         },
         x: -100, // Start 100px left from its original position
         opacity: 0,
-        duration: 2.5,
+        duration: 1,
         ease: "power1.out",
       });
     });
@@ -41,9 +41,22 @@ const ProjectsSection = () => {
       technologies: [
         { name: "React", icon: Icons.react },
         { name: "Bootstrap", icon: Icons.bootstrap },
+        { name: "Javascript", icon: Icons.javascript },
       ],
 
       githubUrl: "https://github.com/zuperzonic1/my-site",
+    },
+    {
+      title: "VS - THE VIRTUAL STORE",
+      description: "This is ",
+      demoUrl: "https://vstore.mfelobes.ca/categories",
+      technologies: [
+        { name: "React", icon: Icons.react },
+        { name: "Javascript", icon: Icons.javascript },
+        { name: "bootstrap", icon: Icons.bootstrap },
+        { name: "Firebase", icon: Icons.firebase },
+      ],
+      githubUrl: "https://github.com/yourusername/statkik-landing-page",
     },
     {
       title: "TWDB - THE WITCHER DATABASE",
@@ -54,7 +67,7 @@ const ProjectsSection = () => {
         { name: "PHP", icon: Icons.php },
         { name: "MySQL", icon: Icons.mysql },
         { name: "Foundation", icon: Icons.bootstrap },
-        { name: "Jquery", icon: Icons.javascript },
+        { name: "Jquery", icon: Icons.jquery },
       ],
       githubUrl: "https://github.com/yourusername/statkik-landing-page",
     },

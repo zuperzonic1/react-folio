@@ -75,6 +75,7 @@ const SkillsSection = () => {
     { src: Icons.wordpress, alt: "WordPress" },
     { src: Icons.php, alt: "PHP" },
     { src: Icons.mysql, alt: "MySQL" },
+    { src: Icons.jquery, alt: "JQuery" },
     { src: Icons.firebase, alt: "Firebase" },
     { src: Icons.three, alt: "Three.js" },
     { src: Icons.git, alt: "Git" },
@@ -84,6 +85,7 @@ const SkillsSection = () => {
     { src: Icons.photoshop, alt: "Photoshop" },
     { src: Icons.xd, alt: "Adobe XD" },
     { src: Icons.illustrator, alt: "Illustrator" },
+    { src: Icons.figma, alt: "Figma" },
   ];
 
   const renderIcons = (iconsArray) =>
