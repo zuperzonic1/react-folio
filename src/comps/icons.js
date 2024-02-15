@@ -12,32 +12,38 @@ import firebaseIcon from "../assets/images/skills/firebase-icon.png";
 import gitIcon from "../assets/images/skills/github-icon.png";
 import threeIcon from "../assets/images/skills/three-icon.png";
 import jqueryIcon from "../assets/images/skills/jquery-icon.png";
-// import gsapIcon from "../assets/images/skills/gsap-icon.png";
-// import foundationIcon from "../assets/images/skills/foundation-icon.png";
-// import nextjsIcon from "../assets/images/skills/nextjs-icon.png";
+import gsapIcon from "../assets/images/skills/gsap-icon.png";
+import nextjsIcon from "../assets/images/skills/nextjs-icon.png";
 
 import psIcon from "../assets/images/skills/ps-icon.png";
 import aiIcon from "../assets/images/skills/ai-icon.png";
 import xdIcon from "../assets/images/skills/xd-icon.png";
 import figmaIcon from "../assets/images/skills/figma-icon.png";
-// Exporting all Icons as a single object, so that we can import them in other components
+
+// Exporting all Icons as a single object, so that we can import them in other components without wasting precious space
+
 const Icons = {
   react: reactIcon,
   bootstrap: bootstrapIcon,
   css: cssIcon,
   html: htmlIcon,
   javascript: jsIcon,
+  php: phpIcon,
+  jquery: jqueryIcon,
+  git: gitIcon,
+  three: threeIcon,
+  gsap: gsapIcon,
+  nextjs: nextjsIcon,
+  wordpress: wordpressIcon,
+
+  firebase: firebaseIcon,
+  mysql: mysqlIcon,
+
   nodejs: nodeIcon,
+
   photoshop: psIcon,
   illustrator: aiIcon,
   xd: xdIcon,
-  wordpress: wordpressIcon,
-  php: phpIcon,
-  mysql: mysqlIcon,
-  firebase: firebaseIcon,
-  git: gitIcon,
-  three: threeIcon,
-  jquery: jqueryIcon,
   figma: figmaIcon,
 };
 

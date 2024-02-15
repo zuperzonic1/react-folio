@@ -67,17 +67,19 @@ const SkillsSection = () => {
 
   const webDevelopmentIcons = [
     { src: Icons.react, alt: "React" },
-    { src: Icons.bootstrap, alt: "Bootstrap" },
-    { src: Icons.css, alt: "CSS" },
     { src: Icons.html, alt: "HTML" },
+    { src: Icons.css, alt: "CSS" },
     { src: Icons.javascript, alt: "JavaScript" },
-    { src: Icons.nodejs, alt: "Node.js" },
-    { src: Icons.wordpress, alt: "WordPress" },
-    { src: Icons.php, alt: "PHP" },
-    { src: Icons.mysql, alt: "MySQL" },
-    { src: Icons.jquery, alt: "JQuery" },
-    { src: Icons.firebase, alt: "Firebase" },
+    { src: Icons.bootstrap, alt: "Bootstrap" },
     { src: Icons.three, alt: "Three.js" },
+    { src: Icons.gsap, alt: "GSAP" },
+    { src: Icons.nextjs, alt: "Next.js" },
+    { src: Icons.nodejs, alt: "Node.js" },
+    { src: Icons.php, alt: "PHP" },
+    { src: Icons.jquery, alt: "JQuery" },
+    { src: Icons.mysql, alt: "MySQL" },
+    { src: Icons.firebase, alt: "Firebase" },
+    { src: Icons.wordpress, alt: "WordPress" },
     { src: Icons.git, alt: "Git" },
   ];
 
@@ -134,7 +136,7 @@ const SkillsSection = () => {
       </Row>
       <Row className="justify-content-center justify-content-md-start">
         <Col xs={12} className="text-center text-md-start">
-          <h5 className="text-color mt-3">DESIGN</h5>
+          <h5 className="text-color mt-3">MEDIA & DESIGN</h5>
           <Row
             ref={designRef}
             className="justify-content-center justify-content-md-start"

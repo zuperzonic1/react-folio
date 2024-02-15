@@ -112,7 +112,7 @@ const ProjectsSection = () => {
                   key={index}
                   src={tech.icon}
                   alt={tech.name}
-                  style={{ width: "40px", height: "40px", marginRight: "10px" }}
+                  style={{ height: "40px", width: "auto", marginRight: "10px" }}
                 />
               ))}
             </div>
