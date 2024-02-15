@@ -37,16 +37,6 @@ const TextAnimation = () => {
           |
         </span>
       </h2>
-      <style jsx>
-        {`
-          .cursor {
-            font-weight: 100;
-            color: #000;
-            opacity: 1;
-            animation: blink 1s infinite;
-          }
-        `}
-      </style>
     </div>
   );
 };

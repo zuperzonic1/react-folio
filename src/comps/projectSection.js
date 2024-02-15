@@ -101,7 +101,7 @@ const ProjectsSection = () => {
           <Col xs={12} md={8} lg={9} className="text-md-left">
             <h3 className="text-color mb-2">{project.title}</h3>
             <p className="text-color">{project.description}</p>
-            <div className="tech-icons my-3">
+            <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
               {project.technologies.map((tech, index) => (
                 <img
                   key={index}
@@ -117,14 +117,14 @@ const ProjectsSection = () => {
             xs={12}
             md={4}
             lg={3}
-            className="d-flex justify-content-end align-items-start"
+            className="d-flex align-items-start justify-content-center justify-content-md-end"
           >
             <Button
               variant="warning"
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="me-3"
+              className="me-3 me-md-0" // 'me-md-0' removes the margin on the right for 'md' and larger sizes
             >
               DEMO
             </Button>
@@ -132,6 +132,7 @@ const ProjectsSection = () => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="ms-2 ms-md-3" // 'ms-md-3' adds margin on the left starting from the 'md' breakpoint
             >
               <img
                 src={Icons.git}

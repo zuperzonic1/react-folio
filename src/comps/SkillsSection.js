@@ -9,27 +9,27 @@ import { OverlayTrigger, Tooltip } from "react-bootstrap";
 const SkillsSection = () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  // Refs for elements
+  // Refrences for the title and the two sections of icons to animate.
   const titleRef = useRef(null);
   const webDevRef = useRef(null);
   const designRef = useRef(null);
 
   useEffect(() => {
-    // Common animation setup
+    // Common animation setup for all my icons.
     const animateIn = (element, opts = {}) => {
       gsap.from(element, {
         scrollTrigger: {
           trigger: element,
-          start: "top 80%",
+          start: "top 90%",
           toggleActions: "play none none none",
           ...opts.scrollTrigger,
         },
         opacity: 0,
         y: opts.y || 50,
         x: opts.x || 0,
-        stagger: 0.2,
+        stagger: 0.02,
         ease: "power2.out",
-        duration: 1,
+        duration: 2,
         ...opts.animation,
       });
     };
@@ -39,9 +39,9 @@ const SkillsSection = () => {
       animateIn(titleRef.current, {
         y: -50, // Adjust as desired
         animation: {
-          opacity: 0.5, // Start with a lower opacity for a fade-in effect
-          ease: "power1.inOut", // A slightly different ease for distinction
-          duration: 1.5, // A bit longer to draw attention
+          opacity: 0.5,
+          ease: "power1.inOut",
+          duration: 1.5,
         },
       });
     }
