@@ -188,6 +188,12 @@ canvas {
 path.cls-1{
   fill: var(--banner-text-color);
 }
+.cursor {
+  font-weight: 200;
+  color: var(--primary-color);
+  opacity: 1;
+  animation: blink 1s infinite;
+}
 
 /* mobile media query  */
 
