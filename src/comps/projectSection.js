@@ -4,6 +4,7 @@ import Icons from "../comps/icons";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { Carousel } from "react-bootstrap";
 
 // Inside your component
 
@@ -11,20 +12,28 @@ import { useEffect } from "react";
 
 const ProjectsSection = () => {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     animateProjects();
-  }, []); // Empty dependency array to run only once after component mounts
-
-  gsap.registerPlugin(ScrollTrigger);
+  }, []);
 
   const animateProjects = () => {
+    // Title Animation
+    gsap.from(".subtitle-text", {
+      duration: 1,
+      autoAlpha: 0, // Fades in from opacity 0 to 1
+      ease: "power1.out",
+      y: -50, // Starts 50 pixels above its original position
+    });
+
+    // Projects Animation
     gsap.utils.toArray(".project-row").forEach((project) => {
       gsap.from(project, {
         scrollTrigger: {
           trigger: project,
-          start: "top center", // Animation starts when the top of the project hits the center of the viewport
-          toggleActions: "play none none none", // Play animation on enter, and don't do anything on leave, repeat, or reverse
+          start: "top center",
+          toggleActions: "play none none none",
         },
-        x: -100, // Start 100px left from its original position
+        x: -100,
         opacity: 0,
         duration: 1,
         ease: "power1.out",
@@ -43,8 +52,11 @@ const ProjectsSection = () => {
         { name: "Bootstrap", icon: Icons.bootstrap },
         { name: "Javascript", icon: Icons.javascript },
       ],
-
       githubUrl: "https://github.com/zuperzonic1/my-site",
+      images: [
+        "https://via.placeholder.com/600x400",
+        "https://via.placeholder.com/600x400",
+      ], // Example image URLs
     },
     {
       title: "VS - THE VIRTUAL STORE",
@@ -53,10 +65,14 @@ const ProjectsSection = () => {
       technologies: [
         { name: "React", icon: Icons.react },
         { name: "Javascript", icon: Icons.javascript },
-        { name: "bootstrap", icon: Icons.bootstrap },
+        { name: "Bootstrap", icon: Icons.bootstrap },
         { name: "Firebase", icon: Icons.firebase },
       ],
       githubUrl: "https://github.com/yourusername/statkik-landing-page",
+      images: [
+        "https://via.placeholder.com/600x400",
+        "https://via.placeholder.com/600x400",
+      ],
     },
     {
       title: "TWDB - THE WITCHER DATABASE",
@@ -70,62 +86,73 @@ const ProjectsSection = () => {
         { name: "Jquery", icon: Icons.jquery },
       ],
       githubUrl: "https://github.com/yourusername/statkik-landing-page",
+      images: [
+        "https://via.placeholder.com/600x400",
+        "https://via.placeholder.com/600x400",
+      ],
     },
   ];
 
   return (
     <Container className="my-5">
-      <h1 className="text-center subtitle-text mb-4 ">MY PROJECTS</h1>
+      <h1 className="text-center subtitle-text mb-4">MY PROJECTS</h1>
       {projects.map((project, index) => (
         <Row key={index} className="mb-5 border-project p-3 project-row">
-          <Col lg={12}>
-            <div className="d-flex justify-content-between align-items-center mb-2">
-              <h3 className="text-color">{project.title}</h3>
-              <div>
-                <Button
-                  variant="warning"
-                  href={project.demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ms-2"
-                >
-                  DEMO
-                </Button>
-                <a
-                  href={project.githubUrl} // Use the githubUrl from the project object
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ms-2"
-                >
-                  <img
-                    src={Icons.git}
-                    alt="GitHub"
-                    style={{ width: "30px", height: "30px" }}
-                  />
-                </a>
-              </div>
-            </div>
+          <Col xs={12} md={8} lg={9} className="text-md-left">
+            <h3 className="text-color mb-2">{project.title}</h3>
             <p className="text-color">{project.description}</p>
-            <div className="tech-icons mt-3">
+            <div className="tech-icons my-3">
               {project.technologies.map((tech, index) => (
                 <img
                   key={index}
                   src={tech.icon}
                   alt={tech.name}
-                  style={{ height: "40px", width: "auto", marginRight: "10px" }}
+                  className="img-fluid me-2"
+                  style={{ height: "30px", width: "auto" }}
                 />
               ))}
             </div>
-            <div className="iframe-container" style={{ marginTop: "20px" }}>
-              <iframe
-                src={project.demoUrl}
-                title={project.title}
-                width="100%"
-                height="500px"
-                style={{ border: "none" }}
-                allowFullScreen
-              ></iframe>
-            </div>
+          </Col>
+          <Col
+            xs={12}
+            md={4}
+            lg={3}
+            className="d-flex justify-content-end align-items-start"
+          >
+            <Button
+              variant="warning"
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="me-3"
+            >
+              DEMO
+            </Button>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={Icons.git}
+                alt="GitHub"
+                className="img-fluid"
+                style={{ maxWidth: "25px", height: "auto" }}
+              />
+            </a>
+          </Col>
+          <Col xs={12} className="project-slideshow my-3">
+            <Carousel>
+              {project.images.map((image, idx) => (
+                <Carousel.Item key={idx}>
+                  <img
+                    className="d-block w-100"
+                    src={image}
+                    alt={`Slide ${idx}`}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </Col>
         </Row>
       ))}

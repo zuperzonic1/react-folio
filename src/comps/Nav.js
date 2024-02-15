@@ -69,7 +69,7 @@ function NavigationBar() {
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
 
-            <Form inline className="d-flex align-items-center">
+            <Form className="d-flex align-items-center">
               <label
                 htmlFor="dark-mode-switch"
                 className="me-auto"
