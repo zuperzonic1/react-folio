@@ -5,10 +5,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
-
-// Inside your component
-
-// Register ScrollTrigger with GSAP
+// importing images for the project section
+import statikAi1 from "../assets/images/projects/statikAi1.png";
+import statikAi2 from "../assets/images/projects/statikAi2.png";
 
 const ProjectsSection = () => {
   useEffect(() => {
@@ -43,7 +42,7 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "StatkAi - LANDING PAGE",
+      title: "statikAi - Landing Page",
       description:
         "statkAi is a Landing page for a company that offers AI solutions for businesses. The website is built using React and Bootstrap. The website is responsive and mobile friendly.",
       demoUrl: "https://statik.mfelobes.ca/",
@@ -53,10 +52,7 @@ const ProjectsSection = () => {
         { name: "Javascript", icon: Icons.javascript },
       ],
       githubUrl: "https://github.com/zuperzonic1/my-site",
-      images: [
-        "https://via.placeholder.com/600x400",
-        "https://via.placeholder.com/600x400",
-      ], // Example image URLs
+      images: [statikAi1, statikAi2], // Example image URLs
     },
     {
       title: "VS - THE VIRTUAL STORE",
@@ -87,6 +83,7 @@ const ProjectsSection = () => {
       ],
       githubUrl: "https://github.com/yourusername/statkik-landing-page",
       images: [
+        "https://via.placeholder.com/600x400",
         "https://via.placeholder.com/600x400",
         "https://via.placeholder.com/600x400",
       ],
