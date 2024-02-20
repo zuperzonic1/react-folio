@@ -8,6 +8,10 @@ import { Carousel } from "react-bootstrap";
 // importing images for the project section
 import statikAi1 from "../assets/images/projects/statikAi1.png";
 import statikAi2 from "../assets/images/projects/statikAi2.png";
+import statikAi3 from "../assets/images/projects/statikAi3.png";
+
+import vStore1 from "../assets/images/projects/vStore1.png";
+import vStore2 from "../assets/images/projects/vStore2.png";
 
 const ProjectsSection = () => {
   useEffect(() => {
@@ -50,9 +54,12 @@ const ProjectsSection = () => {
         { name: "React", icon: Icons.react },
         { name: "Bootstrap", icon: Icons.bootstrap },
         { name: "Javascript", icon: Icons.javascript },
+        { name: "html", icon: Icons.html },
+        { name: "css", icon: Icons.css },
+        { name: "Illustrator", icon: Icons.illustrator },
       ],
       githubUrl: "https://github.com/zuperzonic1/my-site",
-      images: [statikAi1, statikAi2], // Example image URLs
+      images: [statikAi1, statikAi2, statikAi3],
     },
     {
       title: "VS - THE VIRTUAL STORE",
@@ -65,10 +72,7 @@ const ProjectsSection = () => {
         { name: "Firebase", icon: Icons.firebase },
       ],
       githubUrl: "https://github.com/yourusername/statkik-landing-page",
-      images: [
-        "https://via.placeholder.com/600x400",
-        "https://via.placeholder.com/600x400",
-      ],
+      images: [vStore1, vStore2],
     },
     {
       title: "TWDB - THE WITCHER DATABASE",
@@ -82,11 +86,7 @@ const ProjectsSection = () => {
         { name: "Jquery", icon: Icons.jquery },
       ],
       githubUrl: "https://github.com/yourusername/statkik-landing-page",
-      images: [
-        "https://via.placeholder.com/600x400",
-        "https://via.placeholder.com/600x400",
-        "https://via.placeholder.com/600x400",
-      ],
+      images: ["https://via.placeholder.com/600x400"],
     },
   ];
 
@@ -121,7 +121,7 @@ const ProjectsSection = () => {
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="me-3 me-md-0" // 'me-md-0' removes the margin on the right for 'md' and larger sizes
+              className="me-3 me-md-0"
             >
               DEMO
             </Button>
@@ -129,7 +129,7 @@ const ProjectsSection = () => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="ms-2 ms-md-3" // 'ms-md-3' adds margin on the left starting from the 'md' breakpoint
+              className="ms-2 ms-md-3"
             >
               <img
                 src={Icons.git}
