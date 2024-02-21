@@ -74,9 +74,7 @@ function NavigationBar() {
                 htmlFor="dark-mode-switch"
                 className="me-auto"
                 style={{ cursor: "pointer" }}
-              >
-                Color Mode
-              </label>
+              ></label>
               <Form.Check
                 type="switch"
                 id="dark-mode-switch"

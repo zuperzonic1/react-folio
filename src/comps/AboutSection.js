@@ -10,10 +10,11 @@ const AboutSection = () => {
         <Col md={6} className="text-white mb-5">
           <h1 className="mb-3  subtitle-text">ABOUT ME</h1>
           <p className="text-color">
-            Hello! I am a full-stack web developer with a passion for creating
+            Hello! I am a front-end developer with a passion for creating
             beutiful and functional websites. I have experience with HTML, CSS,
-            JavaScript, React, Node.js, Firebase, and more. I am currently
-            looking for a full-time position as a web developer.
+            JavaScript, React, Firebase, and more. I am extreamly passionate
+            about learning and working with new technologies and I am always on
+            the lookout for new projects to work on.
           </p>
           <div className="d-flex align-items-center">
             <Link to="/projects">
