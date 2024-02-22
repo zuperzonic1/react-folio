@@ -133,6 +133,7 @@ canvas {
   padding: 10px;
   margin: 10px;
 }
+
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
