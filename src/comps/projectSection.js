@@ -25,9 +25,9 @@ const ProjectsSection = () => {
     // Title Animation
     gsap.from(".subtitle-text", {
       duration: 1,
-      autoAlpha: 0, // Fades in from opacity 0 to 1
+      autoAlpha: 0,
       ease: "power1.out",
-      y: -50, // Starts 50 pixels above its original position
+      y: -50,
     });
 
     // Projects Animation
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
     {
       title: "Landing Website - statikAi",
       description:
-        "statkAi is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
+        "statkAi is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, and created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
       demoUrl: "https://statik.mfelobes.ca/",
       technologies: [
         { name: "Illustrator", icon: Icons.illustrator },

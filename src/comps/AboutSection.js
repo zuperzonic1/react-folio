@@ -11,10 +11,11 @@ const AboutSection = () => {
           <h1 className="mb-3  subtitle-text">ABOUT ME</h1>
           <p className="text-color">
             Hello! I am a front-end developer with a passion for creating
-            beutiful and functional websites. I have experience with HTML, CSS,
-            JavaScript, React, Firebase, and more. I am extreamly passionate
+            beautiful and functional websites. I have experience with HTML, CSS,
+            JavaScript, React, Firebase, and more. I am extremely passionate
             about learning and working with new technologies and I am always on
-            the lookout for new projects to work on.
+            the lookout for new projects to work on. make this the first para in
+            my resume,
           </p>
           <div className="d-flex align-items-center">
             <Link to="/projects">
