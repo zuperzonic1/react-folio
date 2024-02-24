@@ -72,7 +72,6 @@ const ProjectsSection = () => {
       technologies: [
         { name: "React", icon: Icons.react },
         { name: "Javascript", icon: Icons.javascript },
-        { name: "Bootstrap", icon: Icons.bootstrap },
         { name: "Firebase", icon: Icons.firebase },
       ],
       githubUrl: "https://github.com/zuperzonic1",
