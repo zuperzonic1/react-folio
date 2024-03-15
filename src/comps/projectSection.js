@@ -18,33 +18,34 @@ import twdb1 from "../assets/images/projects/twdb1.png";
 const ProjectsSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    animateProjects();
-  }, []);
 
-  const animateProjects = () => {
-    // Title Animation
+    // Fade-In and Slight Rise on Page Load for the Title
     gsap.from(".subtitle-text", {
-      duration: 1,
+      duration: 1.5,
       autoAlpha: 0,
-      ease: "power1.out",
-      y: -50,
+      ease: "power2.out",
+      y: -20,
     });
 
-    // Projects Animation
-    gsap.utils.toArray(".project-row").forEach((project) => {
+    // Staggered Fade-In and Rise for Project Rows
+    gsap.utils.toArray(".project-row").forEach((project, index) => {
       gsap.from(project, {
         scrollTrigger: {
           trigger: project,
-          start: "top center",
-          toggleActions: "play none none none",
+          start: "top 80%", // Animation starts when the top of the project hits the 80% height of the viewport
+          end: "bottom top",
+          toggleActions: "play none none reverse",
+          markers: false, // Set to true if you want to see the start and end points
         },
-        x: -100,
-        opacity: 0,
         duration: 1,
+        autoAlpha: 0,
         ease: "power1.out",
+        y: 30,
+        stagger: 0.3, // Each project fades in slightly after the previous one
       });
     });
-  };
+
+  }, []);
 
   const projects = [
     {
