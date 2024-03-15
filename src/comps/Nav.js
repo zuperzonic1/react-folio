@@ -4,10 +4,13 @@ import { LinkContainer } from "react-router-bootstrap";
 import Logo from "../assets/images/Logo";
 
 function NavigationBar() {
-  // Set initial dark mode state based on the browser's setting
+  // State for dark mode and mobile view
   const [darkMode, setDarkMode] = useState(
     window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth < 768
   );
 
   useEffect(() => {
@@ -19,20 +22,27 @@ function NavigationBar() {
         document.body.removeAttribute("data-theme");
       }
     };
-
     updateBodyClasses();
 
     // Listen for changes in the browser's dark mode setting
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const handleChange = (e) => {
+    const mediaQueryDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChangeDarkMode = (e) => {
       setDarkMode(e.matches);
       updateBodyClasses();
     };
+    mediaQueryDarkMode.addEventListener("change", handleChangeDarkMode);
 
-    mediaQuery.addEventListener("change", handleChange);
+    // Handle window resize for mobile view
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
 
-    // Cleanup listener on component unmount
-    return () => mediaQuery.removeEventListener("change", handleChange);
+    // Cleanup listeners on component unmount
+    return () => {
+      mediaQueryDarkMode.removeEventListener("change", handleChangeDarkMode);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [darkMode]);
 
   const handleDarkModeToggle = () => {
@@ -53,8 +63,7 @@ function NavigationBar() {
             <Logo />
           </Navbar.Brand>
         </LinkContainer>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />{" "}
-        {/* Hamburger menu*/}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto align-items-left">
             <LinkContainer to="/">
@@ -70,11 +79,9 @@ function NavigationBar() {
             </LinkContainer>
 
             <Form className="d-flex align-items-center">
-              <label
-                htmlFor="dark-mode-switch"
-                className="me-auto"
-                style={{ cursor: "pointer" }}
-              ></label>
+              {isMobile && (
+                <span className="me-2" style={{ fontSize: '0.9rem' }}>Color Mode</span>
+              )}
               <Form.Check
                 type="switch"
                 id="dark-mode-switch"
