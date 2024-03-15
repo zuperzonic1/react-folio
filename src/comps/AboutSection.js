@@ -24,7 +24,7 @@ const AboutSection = () => {
               </button>
             </Link>
             <a
-              href="https://statik.mfelobes.ca/toDownload/resume.pdf"
+              href="https://staging.mfelobes.ca/toDownload/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
