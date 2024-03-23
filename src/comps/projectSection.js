@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
+
 // importing images for the project section
 import statikAi1 from "../assets/images/projects/statikAi1.png";
 import statikAi2 from "../assets/images/projects/statikAi2.png";
@@ -14,7 +15,9 @@ import vStore1 from "../assets/images/projects/vStore1.png";
 import vStore2 from "../assets/images/projects/vStore2.png";
 
 import twdb1 from "../assets/images/projects/twdb1.png";
+
 import browsaritos1 from "../assets/images/projects/browsaritos1.png";
+import browsaritos2 from "../assets/images/projects/browsaritos2.png";
 
 const ProjectsSection = () => {
   useEffect(() => {
@@ -64,8 +67,8 @@ const ProjectsSection = () => {
       { name: "css", icon: Icons.css },
 
     ],
-    githubUrl: "https://github.com/AhmedElsharawy/discord-react-project",
-    images: [browsaritos1],
+    githubUrl: "https://github.com/AhmedElsharawy/discord-react-browseritos",
+    images: [browsaritos1, browsaritos2],
   },
   {
     title: "Landing Website - statikAi",
@@ -112,7 +115,6 @@ const ProjectsSection = () => {
     images: [twdb1],
   },
   ];
-
   return (
     <Container className="my-5">
       <h1 className="text-center subtitle-text mb-4">MY PROJECTS</h1>
@@ -163,7 +165,7 @@ const ProjectsSection = () => {
             </a>
           </Col>
           <Col xs={12} className="project-slideshow my-3">
-            <Carousel>
+            <Carousel className="no-arrows-carousel">
               {project.images.map((image, idx) => (
                 <Carousel.Item key={idx}>
                   <img

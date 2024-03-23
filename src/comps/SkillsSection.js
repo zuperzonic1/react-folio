@@ -73,8 +73,8 @@ const SkillsSection = () => {
     { src: Icons.bootstrap, alt: "Bootstrap" },
     { src: Icons.three, alt: "Three.js" },
     { src: Icons.gsap, alt: "GSAP" },
-    // { src: Icons.nextjs, alt: "Next.js" },
-    // { src: Icons.nodejs, alt: "Node.js" },
+    // { src: Icons.nextjs, alt: "Next.js" }, need more practice with this lol
+    { src: Icons.nodejs, alt: "Node.js" },
     { src: Icons.php, alt: "PHP" },
     { src: Icons.jquery, alt: "JQuery" },
     { src: Icons.mysql, alt: "MySQL" },
