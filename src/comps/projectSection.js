@@ -19,6 +19,9 @@ import twdb1 from "../assets/images/projects/twdb1.png";
 import browsaritos1 from "../assets/images/projects/browsaritos1.png";
 import browsaritos2 from "../assets/images/projects/browsaritos2.png";
 
+import portfolio1 from "../assets/images/projects/portfolio1.png";
+import portfolio2 from "../assets/images/projects/portfolio2.png";
+
 const ProjectsSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -52,6 +55,44 @@ const ProjectsSection = () => {
   }, []);
 
   const projects = [
+    {
+      title: "Personal Portfolio - This Website",
+      description:
+        "This is a portfolio website where I showcase my work. I decided to begin designing the entire website in Illustrator to better envision the site and determine the necessary tech stack. Additionally, I utilized Three.js with React Fiber for smoother integration into the React ecosystem. The site is designed to handle dynamic data for more straightforward data input in the future.",
+      demoUrl: "https://browseritos.mfelobes.ca/",
+      technologies: [
+        { name: "Illustrator", icon: Icons.illustrator },
+        { name: "Photoshop", icon: Icons.photoshop },
+        { name: "React", icon: Icons.react },
+        { name: "bootstrap", icon: Icons.bootstrap},
+        { name: "Node.js", icon: Icons.nodejs },
+        { name: "three.js", icon: Icons.three },
+        { name: "gsap", icon: Icons.gsap },
+        // { name: "Express", icon: Icons.express },
+        { name: "Javascript", icon: Icons.javascript },
+        { name: "html", icon: Icons.html },
+        { name: "css", icon: Icons.css },
+      ],
+      githubUrl: "https://github.com/zuperzonic1",
+      images: [portfolio1, portfolio2],
+    },
+    {
+      title: "Landing Website - statikAi",
+      description:
+        "this is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, and created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
+      demoUrl: "https://statik.mfelobes.ca/",
+      technologies: [
+        { name: "Illustrator", icon: Icons.illustrator },
+        { name: "Figma", icon: Icons.figma },
+        { name: "React", icon: Icons.react },
+        { name: "Bootstrap", icon: Icons.bootstrap },
+        { name: "Javascript", icon: Icons.javascript },
+        { name: "html", icon: Icons.html },
+        { name: "css", icon: Icons.css },
+      ],
+      // githubUrl: "https://github.com/zuperzonic1",
+      images: [statikAi1, statikAi2, statikAi3],
+    },
   {
     title: "ChatBox with Discord Integration - Browseritos",
     description:
@@ -69,23 +110,6 @@ const ProjectsSection = () => {
     ],
     githubUrl: "https://github.com/AhmedElsharawy/discord-react-browseritos",
     images: [browsaritos1, browsaritos2],
-  },
-  {
-    title: "Landing Website - statikAi",
-    description:
-      "statkAi is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, and created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
-    demoUrl: "https://statik.mfelobes.ca/",
-    technologies: [
-      { name: "Illustrator", icon: Icons.illustrator },
-      { name: "Figma", icon: Icons.figma },
-      { name: "React", icon: Icons.react },
-      { name: "Bootstrap", icon: Icons.bootstrap },
-      { name: "Javascript", icon: Icons.javascript },
-      { name: "html", icon: Icons.html },
-      { name: "css", icon: Icons.css },
-    ],
-    githubUrl: "https://github.com/zuperzonic1/my-site",
-    images: [statikAi1, statikAi2, statikAi3],
   },
   {
     title: "React Website - The Virtual Store",

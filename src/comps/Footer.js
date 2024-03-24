@@ -5,44 +5,44 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Footer() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".footer", {
-      duration: 1,
-      y: 50,
-      opacity: 0,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".footer",
-        start: "top bottom", // Animation starts when the top of the footer hits the bottom of the viewport
-      },
-    });
+  //   gsap.from(".footer", {
+  //     duration: 1,
+  //     y: 50,
+  //     opacity: 0,
+  //     ease: "power3.out",
+  //     scrollTrigger: {
+  //       trigger: ".footer",
+  //       start: "top bottom", // Animation starts when the top of the footer hits the bottom of the viewport
+  //     },
+  //   });
 
-    gsap.from(".footer .subtitle-text", {
-      duration: 0.5,
-      y: 30,
-      opacity: 0,
-      stagger: 0.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".footer",
-        start: "top bottom",
-      },
-    });
+  //   gsap.from(".footer .subtitle-text", {
+  //     duration: 0.5,
+  //     y: 30,
+  //     opacity: 0,
+  //     stagger: 0.2,
+  //     ease: "power3.out",
+  //     scrollTrigger: {
+  //       trigger: ".footer",
+  //       start: "top bottom",
+  //     },
+  //   });
 
-    gsap.from(".footer .list-unstyled li", {
-      duration: 0.5,
-      y: 20,
-      opacity: 0,
-      stagger: 0.1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".footer",
-        start: "top bottom",
-      },
-    });
-  }, []);
+  //   gsap.from(".footer .list-unstyled li", {
+  //     duration: 0.5,
+  //     y: 20,
+  //     opacity: 0,
+  //     stagger: 0.1,
+  //     ease: "power3.out",
+  //     scrollTrigger: {
+  //       trigger: ".footer",
+  //       start: "top bottom",
+  //     },
+  //   });
+  // }, []);
 
   return (
     <footer className="footer">
@@ -98,7 +98,7 @@ function Footer() {
             <ul className="list-unstyled">
               <li>
                 <Link to="/contact" className="footer-link">
-                  Form
+                  Contact Form
                 </Link>
               </li>
               <li>
@@ -112,7 +112,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:Me@Mfelobes.ca" className="footer-link">
+                <a href="mailto:Micheal@Mfelobes.ca" className="footer-link">
                   Email
                 </a>
               </li>
