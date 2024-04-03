@@ -19,6 +19,9 @@ import twdb1 from "../assets/images/projects/twdb1.png";
 import browsaritos1 from "../assets/images/projects/browsaritos1.png";
 import browsaritos2 from "../assets/images/projects/browsaritos2.png";
 
+import BuyMore1 from "../assets/images/projects/BuyMore1.png";
+import BuyMore2 from "../assets/images/projects/BuyMore2.png";
+
 import portfolio1 from "../assets/images/projects/portfolio1.png";
 import portfolio2 from "../assets/images/projects/portfolio2.png";
 
@@ -59,7 +62,7 @@ const ProjectsSection = () => {
       title: "Personal Portfolio - This Website",
       description:
         "This is a portfolio website where I showcase my work. I decided to begin designing the entire website in Illustrator to better envision the site and determine the necessary tech stack. Additionally, I utilized Three.js with React Fiber for smoother integration into the React ecosystem. The site is designed to handle dynamic data for more straightforward data input in the future.",
-      demoUrl: "https://browseritos.mfelobes.ca/",
+      demoUrl: "https://mfelobes.ca/",
       technologies: [
         { name: "Illustrator", icon: Icons.illustrator },
         { name: "Photoshop", icon: Icons.photoshop },
@@ -73,13 +76,14 @@ const ProjectsSection = () => {
         { name: "html", icon: Icons.html },
         { name: "css", icon: Icons.css },
       ],
-      githubUrl: "https://github.com/zuperzonic1",
+      // githubUrl: "https://github.com/zuperzonic1",
       images: [portfolio1, portfolio2],
     },
+
     {
       title: "Landing Website - statikAi",
       description:
-        "this is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, and created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
+        "This is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, and created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
       demoUrl: "https://statik.mfelobes.ca/",
       technologies: [
         { name: "Illustrator", icon: Icons.illustrator },
@@ -110,6 +114,23 @@ const ProjectsSection = () => {
     ],
     githubUrl: "https://github.com/AhmedElsharawy/discord-react-browseritos",
     images: [browsaritos1, browsaritos2],
+  },
+  {
+    title: "BuyMore - Contest Website/ Match Game",
+    description:
+      "In this project, I began by aligning with the developer's tech stack, followed by selecting a color theme appealing to our target audience. I crafted a Userflow Chart to map out the necessary pages, ensuring a smooth user journey. Designing each page with user interactions in mind, I then created key assets like the logo and icons using Adobe Illustrator, integrating them into the Figma project. This approach highlights my ability to blend aesthetic appeal with functional design, leveraging industry-standard tools to deliver a cohesive and engaging user experience.",
+    demoUrl: "https://statik.mfelobes.ca/",
+    technologies: [
+      { name: "Illustrator", icon: Icons.illustrator },
+      { name: "Figma", icon: Icons.figma },
+      { name: "React", icon: Icons.react },
+      { name: "Javascript", icon: Icons.javascript },
+      { name: "html", icon: Icons.html },
+      { name: "css", icon: Icons.css },
+      { name: "firebase", icon: Icons.firebase}
+    ],
+    githubUrl: "https://github.com/HeyItsLethal/buymoredollars",
+    images: [BuyMore1, BuyMore2],
   },
   {
     title: "React Website - The Virtual Store",
