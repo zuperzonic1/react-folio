@@ -4,6 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import AboutSection from "../comps/AboutSection";
 import SkillsSection from "../comps/SkillsSection";
 import HomeBanner from "../comps/HomeBanner";
+import LogoExplain from "../comps/LogoExplain";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -31,6 +32,9 @@ const Homepage = () => {
       <Row>
         <SkillsSection className="skills-section" />
       </Row>
+      {/* <Row>
+        <LogoExplain />
+      </Row> */}
     </Container>
   );
 };

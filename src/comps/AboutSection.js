@@ -14,8 +14,7 @@ const AboutSection = () => {
             beautiful and functional websites. I have experience with HTML, CSS,
             JavaScript, React, Firebase, and more. I am extremely passionate
             about learning and working with new technologies and I am always on
-            the lookout for new projects to work on. make this the first para in
-            my resume,
+            the lookout for new projects to work on, Hit me up if you have any projects in mind.
           </p>
           <div className="d-flex align-items-center">
             <Link to="/projects">

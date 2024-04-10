@@ -22,6 +22,8 @@ import browsaritos2 from "../assets/images/projects/browsaritos2.png";
 import BuyMore1 from "../assets/images/projects/BuyMore1.png";
 import BuyMore2 from "../assets/images/projects/BuyMore2.png";
 
+import freshBasket1 from "../assets/images/projects/freshBasket1.png";
+
 import portfolio1 from "../assets/images/projects/portfolio1.png";
 import portfolio2 from "../assets/images/projects/portfolio2.png";
 
@@ -116,10 +118,27 @@ const ProjectsSection = () => {
     images: [browsaritos1, browsaritos2],
   },
   {
+    title: "FreshBasket - Groceory Store Website",
+    description:" This is a groceory store website with a functioning cart and checkout, the website is built using Sammy.js, Materialize, PHP, MySQL, and Jquery. The website pulls data from a MySQL database and displays it on the website. The cart info is stored in global varriables and is used to calculate the total price of the items in the cart.",
+    demoUrl: "https://freshbasket.mfelobes.ca/#/home/",
+    technologies: [
+      { name: "Illustrator", icon: Icons.illustrator },
+      { name: "Javascript", icon: Icons.javascript },
+      { name: "html", icon: Icons.html },
+      { name: "css", icon: Icons.css },
+      { name: "jQuery", icon: Icons.jquery },
+      { name: "PHP", icon: Icons.php },
+      { name: "MySQL", icon: Icons.mysql },
+
+    ],
+    githubUrl: "",
+    images: [freshBasket1],
+  },
+  {
     title: "BuyMore - Contest Website/ Match Game",
     description:
       "In this project, I began by aligning with the developer's tech stack, followed by selecting a color theme appealing to our target audience. I crafted a Userflow Chart to map out the necessary pages, ensuring a smooth user journey. Designing each page with user interactions in mind, I then created key assets like the logo and icons using Adobe Illustrator, integrating them into the Figma project. This approach highlights my ability to blend aesthetic appeal with functional design, leveraging industry-standard tools to deliver a cohesive and engaging user experience.",
-    demoUrl: "https://statik.mfelobes.ca/",
+    demoUrl: "https://www.figma.com/file/4H19xPD5xU0aqHv0GMGBkc/BUY-MORE?type=design&node-id=0%3A1&mode=design&t=eT2HLOouC1Sdq1yU-1",
     technologies: [
       { name: "Illustrator", icon: Icons.illustrator },
       { name: "Figma", icon: Icons.figma },
@@ -174,7 +193,7 @@ const ProjectsSection = () => {
                   key={index}
                   src={tech.icon}
                   alt={tech.name}
-                  className="img-fluid me-2"
+                  className="img-fluid me-2 mt-2"
                   style={{ height: "30px", width: "auto" }}
                 />
               ))}

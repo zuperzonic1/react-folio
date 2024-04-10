@@ -201,6 +201,25 @@ path.cls-1{
   display: none !important;
 }
 
+/* Adding Product Explination Hyperlexed Element */
+.logo-explain {
+ height: 500px;
+}
+
+#logo {
+  position: relative;
+  height: 70vh;
+  width: auto;
+  aspect-ratio: 1000 / 556;
+  user-select: none;
+  margin: 5vh;
+}
+
+#logo > img {
+  width: 100%;
+  position: absolute;
+}
+
 
 /* mobile media query  */
 
