@@ -116,7 +116,7 @@ const SkillsSection = () => {
     ));
 
   return (
-    <Container fluid className="my-5 px-0">
+    <Container fluid className="mb-5 px-0">
       <h1
         ref={titleRef}
         className="subtitle-text mb-4 text-center text-md-start"

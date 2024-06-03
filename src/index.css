@@ -233,3 +233,9 @@ path.cls-1{
 }
 
 
+.hyperlink{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+

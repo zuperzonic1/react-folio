@@ -181,69 +181,68 @@ const ProjectsSection = () => {
   ];
   return (
     <Container className="my-5">
-      <h1 className="text-center subtitle-text mb-4">MY PROJECTS</h1>
-      {projects.map((project, index) => (
-        <Row key={index} className="mb-5 border-project p-3 project-row">
-          <Col xs={12} md={8} lg={9} className="text-md-left">
-            <h3 className="primary-text mb-2">{project.title}</h3>
-            <p className="text-color ">{project.description}</p>
-            <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
-              {project.technologies.map((tech, index) => (
+    <h1 className="text-center subtitle-text mb-4">MY PROJECTS</h1>
+    {projects.map((project, index) => (
+      <Row key={index} className="mb-5 border-project p-3 project-row">
+        <Col xs={12} className="mb-3">
+          <h3 className="primary-text mb-2 text-center text-md-left">{project.title}</h3>
+        </Col>
+        <Col xs={12} md={4} className="d-flex align-items-center justify-content-center">
+          <Carousel className="w-100">
+            {project.images.map((image, idx) => (
+              <Carousel.Item key={idx}>
                 <img
-                  key={index}
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="img-fluid me-2 mt-2"
-                  style={{ height: "30px", width: "auto" }}
+                  className="d-block w-100"
+                  src={image}
+                  alt={`Slide ${idx}`}
                 />
-              ))}
-            </div>
-          </Col>
-          <Col
-            xs={12}
-            md={4}
-            lg={3}
-            className="d-flex align-items-start justify-content-center justify-content-md-end"
-          >
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </Col>
+        <Col xs={12} md={8}>
+          <p className="text-color ">{project.description}</p>
+          <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
+            {project.technologies.map((tech, index) => (
+              <img
+                key={index}
+                src={tech.icon}
+                alt={tech.name}
+                className="img-fluid me-2 mt-2"
+                style={{ height: "30px", width: "auto" }}
+              />
+            ))}
+          </div>
+          <div className="d-flex justify-content-center justify-content-md-start">
             <Button
               variant="warning"
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="me-3 me-md-0"
+              className="me-3"
             >
               DEMO
             </Button>
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ms-2 ms-md-3"
-            >
-              <img
-                src={Icons.git}
-                alt="GitHub"
-                className="img-fluid"
-                style={{ maxWidth: "25px", height: "auto" }}
-              />
-            </a>
-          </Col>
-          <Col xs={12} className="project-slideshow my-3">
-            <Carousel className="no-arrows-carousel">
-              {project.images.map((image, idx) => (
-                <Carousel.Item key={idx}>
-                  <img
-                    className="d-block w-100"
-                    src={image}
-                    alt={`Slide ${idx}`}
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          </Col>
-        </Row>
-      ))}
-    </Container>
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-inline-block"
+              >
+                <img
+                  src={Icons.git}
+                  alt="GitHub"
+                  className="img-fluid"
+                  style={{ maxWidth: "25px", height: "auto" }}
+                />
+              </a>
+            )}
+          </div>
+        </Col>
+      </Row>
+    ))}
+  </Container>
   );
 };
 
