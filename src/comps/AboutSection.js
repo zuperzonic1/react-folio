@@ -21,8 +21,8 @@ const AboutSection = () => {
           {/* hide on mobile */}
           <div className="d-none d-md-block">
           <h3 className="subtitle-text  " >AR Globe <span className="small hyperlink">(Quick Interaction)</span></h3>
-          <p className="text-color ">Scan the QR code to view an AR version of the Globe or click on this <a className="hyperlink" href="https://arearth.mfelobes.ca">link</a> and scan the pointer from another device.  </p>
-          <p>Please enable camera acces </p>
+          <p className="text-color ">Scan the QR code to view an AR version of the Globe or click on this <a className="hyperlink" href="https://arearth.mfelobes.ca">Link</a> and scan the pointer from another device.  </p>
+          <p>Please Allow Camera Acces </p>
           <img src={QRcode} alt="qr" className=" mb-3  img-fluid" style={{ maxWidth: "20%" }} />
           <img src={HiroImg} alt="Hiro" className=" mb-3  img-fluid" style={{ maxWidth: "20%" }} />
           </div>
@@ -43,7 +43,7 @@ const AboutSection = () => {
           </div>
         </Col>
 
-        <Col md={6} className="d-none d-md-block">
+        <Col md={6} className="">
           <Earth3D />
         </Col>
       </Row>
