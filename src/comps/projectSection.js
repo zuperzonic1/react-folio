@@ -24,6 +24,15 @@ const imageMapper = {
   twdb1: Images.twdb1,
 };
 
+// Helper function to truncate text
+const truncateText = (text, wordLimit) => {
+  const words = text.split(" ");
+  if (words.length <= wordLimit) {
+    return text;
+  }
+  return words.slice(0, wordLimit).join(" ") + "...";
+};
+
 const ProjectsSection = () => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
@@ -83,7 +92,7 @@ const ProjectsSection = () => {
             </Carousel>
           </Col>
           <Col xs={12} md={8}>
-            <p className="text-color">{project.description}</p>
+            <p className="text-color">{truncateText(project.description, 25)}</p>
             <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
               {project.technologies.map((tech, index) => (
                 <img
@@ -105,7 +114,7 @@ const ProjectsSection = () => {
               >
                 DEMO
               </Button>
-              <Button onClick={() => navigate(`/projects/${project.id}`)} variant="info">
+              <Button onClick={() => navigate(`/projects/${project.id}`)} variant="warning">
                 View Details
               </Button>
               {project.githubUrl && (
