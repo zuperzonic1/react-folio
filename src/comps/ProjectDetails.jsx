@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import projectData from "../data/projects.json";
 import Icons from "../comps/icons";
 import Images from "./images"; // Create an Images object to map image paths
@@ -26,69 +26,68 @@ const ProjectDetails = () => {
   const project = projectData.find((project) => project.id.toString() === id);
 
   if (!project) {
-    return <Container><h1>Project Not Found</h1></Container>;
+    return (
+      <Container>
+        <h1>Project Not Found</h1>
+      </Container>
+    );
   }
 
   return (
     <Container className="my-5">
-      <h1 className="text-center mb-4">{project.title}</h1>
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <h1 className="subtitle-text">{project.title}</h1>
+        <Button
+          variant="warning"
+          href={project.demoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DEMO
+        </Button>
+      </div>
+      <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
+        {project.technologies.map((tech, index) => (
+          <div key={index} className="d-flex flex-column align-items-center me-3 mt-2">
+            <img
+              src={Icons[tech.icon]}
+              alt={tech.name}
+              className="img-fluid"
+              style={{ height: "30px", width: "auto" }}
+            />
+            <span>{tech.name}</span>
+          </div>
+        ))}
+      </div>
+      <p>{project.description}</p>
       <Row>
-        <Col xs={12} className="mb-3">
-          <Carousel className="w-100">
-            {project.images.map((image, idx) => (
-              <Carousel.Item key={idx}>
-                <img
-                  className="d-block w-100"
-                  src={imageMapper[image]}
-                  alt={`Slide ${idx}`}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Col>
-        <Col xs={12}>
-          <p>{project.description}</p>
-          <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
-            {project.technologies.map((tech, index) => (
-              <div key={index} className="d-flex flex-column align-items-center me-3 mt-2">
-                <img
-                  src={Icons[tech.icon]}
-                  alt={tech.name}
-                  className="img-fluid"
-                  style={{ height: "30px", width: "auto" }}
-                />
-                <span>{tech.name}</span>
-              </div>
-            ))}
-          </div>
-          <div className="d-flex justify-content-center justify-content-md-start">
-            <Button
-              variant="warning"
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="me-3"
-            >
-              DEMO
-            </Button>
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="d-inline-block"
-              >
-                <img
-                  src={Icons.git}
-                  alt="GitHub"
-                  className="img-fluid"
-                  style={{ maxWidth: "25px", height: "auto" }}
-                />
-              </a>
-            )}
-          </div>
-        </Col>
+        {project.images.map((image, idx) => (
+          <Col xs={12} key={idx} className="mb-3">
+            <img
+              className="d-block w-100"
+              src={imageMapper[image]}
+              alt={`Image ${idx}`}
+            />
+          </Col>
+        ))}
       </Row>
+      <div className="d-flex justify-content-center justify-content-md-start">
+        {project.githubUrl && (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="d-inline-block"
+          >
+            <img
+              src={Icons.git}
+              alt="GitHub"
+              className="img-fluid"
+              style={{ maxWidth: "25px", height: "auto" }}
+            />
+          </a>
+        )}
+      </div>
     </Container>
   );
 };
