@@ -8,7 +8,7 @@ import QRcode from "../assets/QRcode.png";
 const AboutSection = () => {
   return (
     <Container className="my-5">
-      <Row className="align-items-center ">
+      <Row className="align-items-center">
         <Col md={6} className="text-white mb-5">
           <h1 className="subtitle-text">ABOUT ME</h1>
           <p className="text-color">
@@ -16,15 +16,17 @@ const AboutSection = () => {
             beautiful and functional websites. I have experience with HTML, CSS,
             JavaScript, React, Firebase, and more. I am extremely passionate
             about learning and working with new technologies and I am always on
-            the lookout for new projects to work on, Hit me up if you have any projects in mind.
+            the lookout for new projects to work on. Hit me up if you have any projects in mind.
           </p>
-          {/* hide on mobile */}
-          <div className="d-none d-md-block">
-          <h3 className="subtitle-text  " >AR Globe <span className="small hyperlink">(Quick Interaction)</span></h3>
-          <p className="text-color ">Scan the QR code to view an AR version of the Globe or click on this <a className="hyperlink" href="https://arearth.mfelobes.ca">Link</a> and scan the pointer from another device.  </p>
-          <p>Please Allow Camera Acces </p>
-          <img src={QRcode} alt="qr" className=" mb-3  img-fluid" style={{ maxWidth: "20%" }} />
-          <img src={HiroImg} alt="Hiro" className=" mb-3  img-fluid" style={{ maxWidth: "20%" }} />
+
+          <h3 className="subtitle-text">AR Globe <span className="small hyperlink">(Quick Interaction)</span></h3>
+          <p className="text-color">
+            Scan the QR code to view an AR version of the Globe or click on this <a className="hyperlink" href="https://arearth.mfelobes.ca">Link</a> and scan the pointer from another device.
+          </p>
+          <p>Please Allow Camera Access</p>
+          <div className="d-flex align-items-center mb-3">
+            <img src={QRcode} alt="qr" className="img-fluid me-3" style={{ maxWidth: "20%" }} />
+            <img src={HiroImg} alt="Hiro" className="img-fluid" style={{ maxWidth: "20%" }} />
           </div>
 
           <div className="d-flex align-items-center">
@@ -43,7 +45,7 @@ const AboutSection = () => {
           </div>
         </Col>
 
-        <Col md={6} className="">
+        <Col md={6}>
           <Earth3D />
         </Col>
       </Row>
