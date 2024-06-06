@@ -1,0 +1,114 @@
+[
+    {
+      "id": 1,
+      "title": "Personal Portfolio - This Website",
+      "description": "This is a portfolio website where I showcase my work. I decided to begin designing the entire website in Illustrator to better envision the site and determine the necessary tech stack. Additionally, I utilized Three.js with React Fiber for smoother integration into the React ecosystem. The site is designed to handle dynamic data for more straightforward data input in the future.",
+      "demoUrl": "https://mfelobes.ca/",
+      "technologies": [
+        { "name": "Illustrator", "icon": "illustrator" },
+        { "name": "Photoshop", "icon": "photoshop" },
+        { "name": "React", "icon": "react" },
+        { "name": "bootstrap", "icon": "bootstrap" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "three.js", "icon": "three" },
+        { "name": "gsap", "icon": "gsap" },
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "html", "icon": "html" },
+        { "name": "css", "icon": "css" }
+      ],
+      "images": ["portfolio1", "portfolio2"]
+    },
+    {
+      "id": 2,
+      "title": "Landing Website - statikAi",
+      "description": "This is a Landing page for a company that offers AI solutions for businesses. I created a figma file, designed the assets with Illustrator, and created a prototype for the client to check and give feedback before development. For the website I worked with React as my main framework, I then used react-router-dom to handle my site’s routing, I used Bootstrap for the general layout of the page, and used CSS for other general styling purposes.",
+      "demoUrl": "https://statik.mfelobes.ca/",
+      "technologies": [
+        { "name": "Illustrator", "icon": "illustrator" },
+        { "name": "Figma", "icon": "figma" },
+        { "name": "React", "icon": "react" },
+        { "name": "Bootstrap", "icon": "bootstrap" },
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "html", "icon": "html" },
+        { "name": "css", "icon": "css" }
+      ],
+      "images": ["statikAi1", "statikAi2", "statikAi3"]
+    },
+    {
+      "id": 3,
+      "title": "ChatBox with Discord Integration - Browseritos",
+      "description": "This is a chatbox that allows users to chat with each other, the chatbox is integrated with Discord, a channel where users can chat with each other, The back end built with node.js and express, and is connected to the frontend using websocket. The frontend is built with React and it's styled using Flowbite(Tailwind Library) and CSS. The chatbox is responsive and mobile friendly. as well as the backend tokens are secure using dotenv.",
+      "demoUrl": "https://browseritos.mfelobes.ca/",
+      "technologies": [
+        { "name": "Photoshop", "icon": "photoshop" },
+        { "name": "React", "icon": "react" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "html", "icon": "html" },
+        { "name": "css", "icon": "css" }
+      ],
+      "githubUrl": "https://github.com/AhmedElsharawy/discord-react-browseritos",
+      "images": ["browsaritos1", "browsaritos2"]
+    },
+    {
+      "id": 4,
+      "title": "FreshBasket - Grocery Store Website",
+      "description": "This is a grocery store website with a functioning cart and checkout, the website is built using Sammy.js, Materialize, PHP, MySQL, and Jquery. The website pulls data from a MySQL database and displays it on the website. The cart info is stored in global variables and is used to calculate the total price of the items in the cart.",
+      "demoUrl": "https://freshbasket.mfelobes.ca/#/home/",
+      "technologies": [
+        { "name": "Illustrator", "icon": "illustrator" },
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "html", "icon": "html" },
+        { "name": "css", "icon": "css" },
+        { "name": "jQuery", "icon": "jquery" },
+        { "name": "PHP", "icon": "php" },
+        { "name": "MySQL", "icon": "mysql" }
+      ],
+      "images": ["freshBasket1"]
+    },
+    {
+      "id": 5,
+      "title": "BuyMore - Contest Website/ Match Game",
+      "description": "In this project, I began by aligning with the developer's tech stack, followed by selecting a color theme appealing to our target audience. I crafted a Userflow Chart to map out the necessary pages, ensuring a smooth user journey. Designing each page with user interactions in mind, I then created key assets like the logo and icons using Adobe Illustrator, integrating them into the Figma project. This approach highlights my ability to blend aesthetic appeal with functional design, leveraging industry-standard tools to deliver a cohesive and engaging user experience.",
+      "demoUrl": "https://www.figma.com/file/4H19xPD5xU0aqHv0GMGBkc/BUY-MORE?type=design&node-id=0%3A1&mode=design&t=eT2HLOouC1Sdq1yU-1",
+      "technologies": [
+        { "name": "Illustrator", "icon": "illustrator" },
+        { "name": "Figma", "icon": "figma" },
+        { "name": "React", "icon": "react" },
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "html", "icon": "html" },
+        { "name": "css", "icon": "css" },
+        { "name": "firebase", "icon": "firebase" }
+      ],
+      "githubUrl": "https://github.com/HeyItsLethal/buymoredollars",
+      "images": ["BuyMore1", "BuyMore2"]
+    },
+    {
+      "id": 6,
+      "title": "React Website - The Virtual Store",
+      "description": "This is a school project that I built using React and Firebase. The website is a virtual store that allows users to add items to their cart and checkout. The website is responsive and mobile friendly.",
+      "demoUrl": "https://vstore.mfelobes.ca/categories",
+      "technologies": [
+        { "name": "React", "icon": "react" },
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "Firebase", "icon": "firebase" }
+      ],
+      "githubUrl": "https://github.com/zuperzonic1",
+      "images": ["vStore1", "vStore2"]
+    },
+    {
+      "id": 7,
+      "title": "TWDB - THE WITCHER DATABASE",
+      "description": "TWDB is a database for the Witcher TV Series. The website is built using Sammy.js, Foundation, PHP, MySQL, and Jquery. the website pulls data from a MySQL database and displays it on the website. The website is Desktop use for now, but will be made responsive in the future.",
+      "demoUrl": "https://staging.mfelobes.ca/mad_movies/dynamic_site",
+      "technologies": [
+        { "name": "PHP", "icon": "php" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Foundation", "icon": "bootstrap" },
+        { "name": "Jquery", "icon": "jquery" }
+      ],
+      "githubUrl": "https://github.com/zuperzonic1",
+      "images": ["twdb1"]
+    }
+  ]
+  
