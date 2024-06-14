@@ -22,6 +22,9 @@ const imageMapper = {
   vStore1: Images.vStore1,
   vStore2: Images.vStore2,
   twdb1: Images.twdb1,
+  codeitos1: Images.codeitos1,
+  codeitos2: Images.codeitos2,
+  peng1: Images.peng1,
 };
 
 // Helper function to truncate text

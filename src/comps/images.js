@@ -19,6 +19,11 @@ import freshBasket1 from "../assets/images/projects/freshBasket1.png";
 import portfolio1 from "../assets/images/projects/portfolio1.png";
 import portfolio2 from "../assets/images/projects/portfolio2.png";
 
+import codeitos1 from "../assets/images/projects/codeitos1.png";
+import codeitos2 from "../assets/images/projects/codeitos2.png";
+
+import peng1 from "../assets/images/projects/peng1.png";
+
 
 const Images = {
     statikAi1,
@@ -34,6 +39,9 @@ const Images = {
     freshBasket1,
     portfolio1,
     portfolio2,
+    codeitos1,
+    codeitos2,
+    peng1,
     };
 
 export default Images;

@@ -32,9 +32,6 @@ const Homepage = () => {
       <Row>
         <SkillsSection className="skills-section" />
       </Row>
-      {/* <Row>
-        <LogoExplain />
-      </Row> */}
     </Container>
   );
 };

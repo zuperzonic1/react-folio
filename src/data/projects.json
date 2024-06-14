@@ -1,4 +1,43 @@
 [
+  {
+    "id": -1,
+    "title": "CODEitOS - A Blogging Site",
+    "description": "CODEitOS was a blog site I did to improve my knowledge of REST APIs moving data across the web. It also introduced me to the strengths of headless CMS platforms. That includes getting an admin panel out of the box and using all the plugins available with WordPress for data customization with that being the backend. For the front end I used React, with TypeScript and Tailwind for styling. GSAP will be used in the following stages for animations.",
+    "demoUrl": "https://codeitos.mfelobes.ca/",
+    "githubUrl": "https://github.com/zuperzonic1/React-Wordpress-CODEitOS",
+    "technologies": [
+      { "name": "Illustrator", "icon": "illustrator" },
+      { "name": "Photoshop", "icon": "photoshop" },
+      { "name": "React", "icon": "react" },
+      { "name": "bootstrap", "icon": "bootstrap" },
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "three.js", "icon": "three" },
+      { "name": "gsap", "icon": "gsap" },
+      { "name": "Javascript", "icon": "javascript" },
+      { "name": "html", "icon": "html" },
+      { "name": "css", "icon": "css" }
+    ],
+    "images": ["codeitos1", "codeitos2"]
+  },
+  {
+    "id": 0,
+    "title": "PEngPrepper - Professional Engineering Certificate Preparation Tool",
+    "description": "In this project, I designed the general site theme, developed a backend part for handling payments through Stripe, and built a frontend in React with Tailwind CSS and Axios data fetching. Data is validated with an awaiting payment confirmation before it's sent for processing by the AI backend. I have built this front using React, Tailwind CSS, and Axios for data fetching. The backend developed in ExpressJS communicates with two distinct services: a Python AI backend and a React frontend. The server built on Express handles payment confirmation and user data, obtaining data from the Python server and sending it to users with a React frontend and email.In this project, I designed the general site theme, developed a backend part for handling payments through Stripe, and built a frontend in React with Tailwind CSS and Axios data fetching. Data is validated with an awaiting payment confirmation before it's sent for processing by the AI backend. I have built this front using React, Tailwind CSS, and Axios for data fetching. The backend developed in ExpressJS communicates with two distinct services: a Python AI backend and a React frontend. The server built on Express handles payment confirmation and user data, obtaining data from the Python server and sending it to users with a React frontend and email.",
+    "demoUrl": "https://pengprepper.mfelobes.ca/",
+    "technologies": [
+      { "name": "Illustrator", "icon": "illustrator" },
+      { "name": "Photoshop", "icon": "photoshop" },
+      { "name": "React", "icon": "react" },
+      { "name": "bootstrap", "icon": "bootstrap" },
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "three.js", "icon": "three" },
+      { "name": "gsap", "icon": "gsap" },
+      { "name": "Javascript", "icon": "javascript" },
+      { "name": "html", "icon": "html" },
+      { "name": "css", "icon": "css" }
+    ],
+    "images": ["peng1"]
+  },
     {
       "id": 1,
       "title": "Personal Portfolio - This Website",
