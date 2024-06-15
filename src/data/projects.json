@@ -6,15 +6,14 @@
     "demoUrl": "https://codeitos.mfelobes.ca/",
     "githubUrl": "https://github.com/zuperzonic1/React-Wordpress-CODEitOS",
     "technologies": [
+      { "name": "Wordpress", "icon": "wordpress" },
       { "name": "Illustrator", "icon": "illustrator" },
       { "name": "Photoshop", "icon": "photoshop" },
       { "name": "React", "icon": "react" },
-      { "name": "bootstrap", "icon": "bootstrap" },
+      { "name": "tailwind", "icon": "tailwind" },
       { "name": "Node.js", "icon": "nodejs" },
-      { "name": "three.js", "icon": "three" },
       { "name": "gsap", "icon": "gsap" },
-      { "name": "Javascript", "icon": "javascript" },
-      { "name": "html", "icon": "html" },
+      { "name": "Typescript", "icon": "typescript" },
       { "name": "css", "icon": "css" }
     ],
     "images": ["codeitos1", "codeitos2"]
@@ -28,12 +27,10 @@
       { "name": "Illustrator", "icon": "illustrator" },
       { "name": "Photoshop", "icon": "photoshop" },
       { "name": "React", "icon": "react" },
-      { "name": "bootstrap", "icon": "bootstrap" },
+      { "name": "tailwind", "icon": "tailwind" },
       { "name": "Node.js", "icon": "nodejs" },
-      { "name": "three.js", "icon": "three" },
       { "name": "gsap", "icon": "gsap" },
       { "name": "Javascript", "icon": "javascript" },
-      { "name": "html", "icon": "html" },
       { "name": "css", "icon": "css" }
     ],
     "images": ["peng1"]
@@ -43,6 +40,7 @@
       "title": "Personal Portfolio - This Website",
       "description": "This is a portfolio website where I showcase my work. I decided to begin designing the entire website in Illustrator to better envision the site and determine the necessary tech stack. Additionally, I utilized Three.js with React Fiber for smoother integration into the React ecosystem. The site is designed to handle dynamic data for more straightforward data input in the future.",
       "demoUrl": "https://mfelobes.ca/",
+      "githubUrl": "https://github.com/zuperzonic1/react-folio",
       "technologies": [
         { "name": "Illustrator", "icon": "illustrator" },
         { "name": "Photoshop", "icon": "photoshop" },

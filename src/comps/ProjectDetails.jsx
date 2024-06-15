@@ -40,14 +40,32 @@ const ProjectDetails = () => {
     <Container className="my-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h1 className="subtitle-text">{project.title}</h1>
-        <Button
-          variant="warning"
-          href={project.demoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          DEMO
-        </Button>
+        <div className="d-flex align-items-center">
+          <Button
+            variant="warning"
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="me-2"
+          >
+            DEMO
+          </Button>
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="d-inline-block"
+            >
+              <img
+                src={Icons.git}
+                alt="GitHub"
+                className="img-fluid"
+                style={{ maxWidth: "25px", height: "auto" }}
+              />
+            </a>
+          )}
+        </div>
       </div>
       <div className="tech-icons d-flex flex-wrap justify-content-center justify-content-md-start my-3">
         {project.technologies.map((tech, index) => (
@@ -74,23 +92,6 @@ const ProjectDetails = () => {
           </Col>
         ))}
       </Row>
-      <div className="d-flex justify-content-center justify-content-md-start">
-        {project.githubUrl && (
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="d-inline-block"
-          >
-            <img
-              src={Icons.git}
-              alt="GitHub"
-              className="img-fluid"
-              style={{ maxWidth: "25px", height: "auto" }}
-            />
-          </a>
-        )}
-      </div>
     </Container>
   );
 };
